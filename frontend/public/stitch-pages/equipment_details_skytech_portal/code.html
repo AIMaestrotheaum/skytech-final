@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Equipment Details - SKYTECH Enterprise</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#515f78",
+                      "tertiary-fixed-dim": "#3cd7ff",
+                      "tertiary-fixed": "#b4ebff",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#e6e8ea",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-container": "#001f27",
+                      "primary": "#000000",
+                      "secondary-fixed-dim": "#b3c5ff",
+                      "surface": "#f7f9fb",
+                      "secondary-fixed": "#dae1ff",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-surface-variant": "#44474d",
+                      "primary-fixed": "#d6e3ff",
+                      "on-secondary-fixed": "#001849",
+                      "surface-variant": "#e0e3e5",
+                      "on-primary": "#ffffff",
+                      "surface-dim": "#d8dadc",
+                      "secondary-container": "#0266ff",
+                      "on-secondary-fixed-variant": "#003fa4",
+                      "outline-variant": "#c5c6cd",
+                      "primary-container": "#0d1c32",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#f9f7ff",
+                      "on-tertiary-fixed": "#001f27",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed-variant": "#004e5f",
+                      "surface-container": "#eceef0",
+                      "inverse-surface": "#2d3133",
+                      "surface-container-low": "#f2f4f6",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-background": "#191c1e",
+                      "on-primary-container": "#76849f",
+                      "background": "#f7f9fb",
+                      "on-tertiary-container": "#0090ae",
+                      "surface-container-highest": "#e0e3e5",
+                      "tertiary": "#000000",
+                      "on-primary-fixed-variant": "#39475f",
+                      "surface-bright": "#f7f9fb",
+                      "secondary": "#0050cc",
+                      "inverse-primary": "#b9c7e4",
+                      "on-secondary": "#ffffff",
+                      "on-surface": "#191c1e",
+                      "outline": "#75777e",
+                      "primary-fixed-dim": "#b9c7e4",
+                      "on-primary-fixed": "#0d1c32"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "xs": "8px",
+                      "base": "4px",
+                      "xl": "80px",
+                      "lg": "40px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px",
+                      "sm": "16px",
+                      "md": "24px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-h1-mobile": [
+                              "Manrope"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-h1": [
+                              "Manrope"
+                      ],
+                      "headline-h2": [
+                              "Manrope"
+                      ],
+                      "data-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "headline-h1-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-h1": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-h2": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "data-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+      </script>
+<style>
+        .grid-pattern {
+            background-image: radial-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.2;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex">
+<!-- SideNavBar (Shared Component) -->
+<nav class="bg-primary-container dark:bg-surface-container text-on-primary-container dark:text-on-surface font-label-caps text-label-caps h-screen w-64 hidden md:flex flex-col fixed left-0 top-0 border-r border-outline-variant shadow-md z-40">
+<div class="flex flex-col h-full p-sm justify-between">
+<div>
+<div class="mb-lg px-sm pt-sm flex items-center gap-sm">
+<img alt="User Profile" class="w-10 h-10 rounded-full object-cover bg-surface-container-highest border border-outline-variant" data-alt="A small, professional corporate avatar icon for a user profile in an industrial tech platform. Deep navy blue and bright white colors. Minimalist, high contrast, clean vector style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo4EN4C0EdEtYRqI4m-Gaf4XR2O9qOifKZxjJ6kX-nr4N6K_c5Enz2XLUc3SV0TT_LbLXx49g5oBO_Hy-ydfHbDPQCaQGLZOojTQBenCaZm_4FDfvKs_xlVJ57GFTB1LcwVGWGQ19fq4Jo49uUs-1uDJTwgEnE3t3fX6RNZYfM02dMfDYRwT244XgdOYNaf1c_urw3D-IOTjTh6jp9am50mDKaTwMT1QjeHbUD-qo4-arSDwpwQDVm"/>
+<div>
+<div class="font-headline-h2 text-headline-h2 font-black text-on-primary-fixed">SKYTECH</div>
+<div class="text-on-primary-container opacity-80 text-[10px]">Power Management Portal</div>
+</div>
+</div>
+<div class="flex flex-col gap-xs mt-md">
+<!-- Active: Equipment -->
+<a class="bg-secondary text-on-secondary rounded-lg font-bold flex items-center gap-sm px-sm py-xs duration-150 ease-in-out hover:bg-secondary-container transition-all" href="#">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+<span>Equipment</span>
+</a>
+<a class="text-on-primary-container opacity-80 hover:bg-on-primary-fixed-variant hover:opacity-100 rounded-lg flex items-center gap-sm px-sm py-xs duration-150 ease-in-out hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined">history</span>
+<span>Service History</span>
+</a>
+<a class="text-on-primary-container opacity-80 hover:bg-on-primary-fixed-variant hover:opacity-100 rounded-lg flex items-center gap-sm px-sm py-xs duration-150 ease-in-out hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined">verified</span>
+<span>AMC Status</span>
+</a>
+<a class="text-on-primary-container opacity-80 hover:bg-on-primary-fixed-variant hover:opacity-100 rounded-lg flex items-center gap-sm px-sm py-xs duration-150 ease-in-out hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-sm">
+<button class="w-full bg-secondary text-on-secondary py-xs rounded font-bold duration-150 ease-in-out hover:bg-secondary-container transition-all shadow-sm">
+                    New Service Request
+                </button>
+<a class="text-on-primary-container opacity-80 hover:bg-on-primary-fixed-variant hover:opacity-100 rounded-lg flex items-center gap-sm px-sm py-xs duration-150 ease-in-out hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Logout</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 w-full md:ml-64 relative min-h-screen">
+<!-- Top App Bar (Mobile) -->
+<header class="md:hidden bg-surface-container-lowest border-b border-outline-variant p-sm flex items-center justify-between sticky top-0 z-30">
+<div class="font-headline-h2 text-headline-h2 font-black text-primary">SKYTECH</div>
+<button class="text-on-surface p-xs rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<div class="p-margin-mobile md:p-margin-desktop max-w-7xl mx-auto space-y-gutter pb-xl">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-sm">
+<div>
+<h1 class="font-headline-h1-mobile md:font-headline-h1 text-headline-h1-mobile md:text-headline-h1 text-on-surface">Equipment Details</h1>
+<p class="text-on-surface-variant mt-1">Detailed specifications and maintenance records.</p>
+</div>
+<div class="flex gap-sm">
+<button class="border border-secondary text-secondary font-semibold px-sm py-xs rounded hover:bg-surface-container transition-colors text-label-caps flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">print</span> Print Report
+                    </button>
+<button class="bg-secondary text-on-secondary font-semibold px-sm py-xs rounded hover:opacity-90 transition-opacity text-label-caps flex items-center gap-xs shadow-sm">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit Details
+                    </button>
+</div>
+</div>
+<!-- Hero Card -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant shadow-sm overflow-hidden relative">
+<div class="absolute inset-0 grid-pattern pointer-events-none"></div>
+<div class="relative z-10 p-md flex flex-col md:flex-row gap-lg items-center md:items-start">
+<!-- Equipment Image -->
+<div class="w-full md:w-1/3 bg-surface-container h-48 md:h-64 rounded border border-outline-variant flex items-center justify-center shrink-0">
+<img alt="100kVA Industrial UPS" class="w-full h-full object-cover mix-blend-multiply opacity-90 p-sm" data-alt="A high-quality studio photograph of a massive industrial Uninterruptible Power Supply (UPS) unit. The unit is a sleek, modern, monolithic metal cabinet painted in deep matte navy blue with sharp, clean lines. Small, bright LED status lights (green and blue) illuminate the front panel. The lighting is crisp and technical, isolating the machine against a stark white background. Corporate modernism style, engineered precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDU8kKnKKToELV_vJCXZsSwODqm3MLLf7UehKBXTarQhqn1TfWbcYoMvjWZ9l_qtOMWO2F7AIQpxZn8m9z2hEKoIRGh-o8bGuV3YFRt_rfJ9tnvxHVzQ0TRtbYRPeug8K9Q_Jx0aVzaKXmH0W-oqrkIbm5pN0zqFNY1zMGJu8JUVxHLa4BvzV-YpwkWxo0UaeMRXjeIs4O6HzE9t7cOXnCYpUVNVhjWBnjOGmZOmeS5jTykvOii2Us"/>
+</div>
+<!-- Primary Info -->
+<div class="flex-1 w-full space-y-md">
+<div class="flex justify-between items-start">
+<div>
+<div class="font-label-caps text-label-caps text-secondary tracking-widest mb-1">Power Systems</div>
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface">100kVA Industrial UPS</h2>
+<p class="font-data-mono text-data-mono text-on-surface-variant mt-1">ID: ST-UPS-2023-A01</p>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest border border-outline-variant px-2 py-1 rounded">
+<div class="w-2 h-2 rounded-full bg-green-500"></div>
+<span class="font-label-caps text-label-caps text-on-surface">Operational</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-sm pt-sm border-t border-outline-variant">
+<div>
+<div class="text-label-caps text-on-surface-variant mb-1">Load Status</div>
+<div class="font-data-mono text-data-mono text-on-surface">45% (Nominal)</div>
+</div>
+<div>
+<div class="text-label-caps text-on-surface-variant mb-1">Battery Health</div>
+<div class="font-data-mono text-data-mono text-on-surface">98% (Good)</div>
+</div>
+<div>
+<div class="text-label-caps text-on-surface-variant mb-1">Last Sync</div>
+<div class="font-data-mono text-data-mono text-on-surface">10 min ago</div>
+</div>
+<div>
+<div class="text-label-caps text-on-surface-variant mb-1">Location</div>
+<div class="font-body-md text-body-md text-on-surface font-semibold">Server Room A</div>
+</div>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2 mt-4">
+<div class="bg-secondary h-2 rounded-full" style="width: 45%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Dashboard Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Technical Information -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant shadow-sm border-t-2 border-t-secondary-container flex flex-col">
+<div class="p-sm border-b border-outline-variant flex items-center gap-2 bg-surface-bright">
+<span class="material-symbols-outlined text-secondary">memory</span>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Technical Info</h3>
+</div>
+<div class="p-sm flex-1">
+<dl class="space-y-sm">
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<dt class="text-on-surface-variant text-sm font-semibold">Model Number</dt>
+<dd class="font-data-mono text-data-mono text-on-surface text-right">ST-Pro-100K</dd>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<dt class="text-on-surface-variant text-sm font-semibold">Serial Number</dt>
+<dd class="font-data-mono text-data-mono text-on-surface text-right">SN9876543210</dd>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<dt class="text-on-surface-variant text-sm font-semibold">Capacity</dt>
+<dd class="font-data-mono text-data-mono text-on-surface text-right">100 kVA / 90 kW</dd>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<dt class="text-on-surface-variant text-sm font-semibold">Input Voltage</dt>
+<dd class="font-data-mono text-data-mono text-on-surface text-right">400V, 3-Phase</dd>
+</div>
+<div class="flex justify-between">
+<dt class="text-on-surface-variant text-sm font-semibold">Firmware Ver.</dt>
+<dd class="font-data-mono text-data-mono text-on-surface text-right">v2.4.1 (Stable)</dd>
+</div>
+</dl>
+</div>
+</div>
+<!-- Maintenance Timeline -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant shadow-sm border-t-2 border-t-secondary-container flex flex-col">
+<div class="p-sm border-b border-outline-variant flex items-center gap-2 bg-surface-bright">
+<span class="material-symbols-outlined text-secondary">build</span>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Maintenance Timeline</h3>
+</div>
+<div class="p-sm flex-1 relative">
+<!-- Vertical Line -->
+<div class="absolute left-[31px] top-md bottom-md w-[2px] bg-outline-variant"></div>
+<div class="space-y-md relative z-10">
+<div class="flex gap-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-outline-variant flex items-center justify-center shrink-0">
+<div class="w-2 h-2 rounded-full bg-outline"></div>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">Jun 15, 2023</div>
+<div class="font-semibold text-on-surface">Initial Installation</div>
+<div class="text-sm text-on-surface-variant">Commissioned by SKYTECH team.</div>
+</div>
+</div>
+<div class="flex gap-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest border-2 border-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] text-secondary">check</span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-secondary font-bold">Dec 10, 2023</div>
+<div class="font-semibold text-on-surface">Last Service (Bi-Annual)</div>
+<div class="text-sm text-on-surface-variant">Routine battery check and firmware update.</div>
+</div>
+</div>
+<div class="flex gap-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest border-2 border-outline-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">schedule</span>
+</div>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">Jun 10, 2024</div>
+<div class="font-semibold text-on-surface">Next Scheduled Check</div>
+<div class="text-sm text-on-surface-variant">Annual comprehensive maintenance.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Documents -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant shadow-sm border-t-2 border-t-secondary-container flex flex-col">
+<div class="p-sm border-b border-outline-variant flex items-center gap-2 bg-surface-bright">
+<span class="material-symbols-outlined text-secondary">description</span>
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface">Documents</h3>
+</div>
+<div class="p-sm flex-1 flex flex-col gap-xs">
+<a class="flex items-center justify-between p-xs border border-outline-variant rounded hover:border-secondary hover:bg-surface transition-all group" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">picture_as_pdf</span>
+<div>
+<div class="font-semibold text-sm text-on-surface">Technical Datasheet</div>
+<div class="text-[10px] text-on-surface-variant uppercase">PDF • 2.4 MB</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors text-[18px]">download</span>
+</a>
+<a class="flex items-center justify-between p-xs border border-outline-variant rounded hover:border-secondary hover:bg-surface transition-all group" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">verified_user</span>
+<div>
+<div class="font-semibold text-sm text-on-surface">Warranty Certificate</div>
+<div class="text-[10px] text-on-surface-variant uppercase">PDF • 1.1 MB</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors text-[18px]">download</span>
+</a>
+<a class="flex items-center justify-between p-xs border border-outline-variant rounded hover:border-secondary hover:bg-surface transition-all group" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">assignment</span>
+<div>
+<div class="font-semibold text-sm text-on-surface">Service Report (Dec 23)</div>
+<div class="text-[10px] text-on-surface-variant uppercase">PDF • 0.8 MB</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors text-[18px]">download</span>
+</a>
+<button class="mt-auto w-full border border-dashed border-outline text-on-surface-variant py-2 rounded text-sm font-semibold hover:bg-surface hover:text-secondary hover:border-secondary transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[18px]">upload</span> Upload Document
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

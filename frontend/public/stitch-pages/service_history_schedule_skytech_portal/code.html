@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Service History - SKYTECH ELECTRICALS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#515f78",
+                      "tertiary-fixed-dim": "#3cd7ff",
+                      "tertiary-fixed": "#b4ebff",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#e6e8ea",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-container": "#001f27",
+                      "primary": "#000000",
+                      "secondary-fixed-dim": "#b3c5ff",
+                      "surface": "#f7f9fb",
+                      "secondary-fixed": "#dae1ff",
+                      "inverse-on-surface": "#eff1f3",
+                      "on-surface-variant": "#44474d",
+                      "primary-fixed": "#d6e3ff",
+                      "on-secondary-fixed": "#001849",
+                      "surface-variant": "#e0e3e5",
+                      "on-primary": "#ffffff",
+                      "surface-dim": "#d8dadc",
+                      "secondary-container": "#0266ff",
+                      "on-secondary-fixed-variant": "#003fa4",
+                      "outline-variant": "#c5c6cd",
+                      "primary-container": "#0d1c32",
+                      "on-error-container": "#93000a",
+                      "on-secondary-container": "#f9f7ff",
+                      "on-tertiary-fixed": "#001f27",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed-variant": "#004e5f",
+                      "surface-container": "#eceef0",
+                      "inverse-surface": "#2d3133",
+                      "surface-container-low": "#f2f4f6",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-background": "#191c1e",
+                      "on-primary-container": "#76849f",
+                      "background": "#f7f9fb",
+                      "on-tertiary-container": "#0090ae",
+                      "surface-container-highest": "#e0e3e5",
+                      "tertiary": "#000000",
+                      "on-primary-fixed-variant": "#39475f",
+                      "surface-bright": "#f7f9fb",
+                      "secondary": "#0050cc",
+                      "inverse-primary": "#b9c7e4",
+                      "on-secondary": "#ffffff",
+                      "on-surface": "#191c1e",
+                      "outline": "#75777e",
+                      "primary-fixed-dim": "#b9c7e4",
+                      "on-primary-fixed": "#0d1c32"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "xs": "8px",
+                      "base": "4px",
+                      "xl": "80px",
+                      "lg": "40px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px",
+                      "sm": "16px",
+                      "md": "24px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-h1-mobile": [
+                              "Manrope"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-h1": [
+                              "Manrope"
+                      ],
+                      "headline-h2": [
+                              "Manrope"
+                      ],
+                      "data-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ]
+              },
+              "fontSize": {
+                      "headline-h1-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-h1": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-h2": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "data-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .dot-grid {
+            background-image: radial-gradient(circle, #e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface text-body-md min-h-screen flex antialiased">
+<!-- SideNavBar (from JSON) -->
+<nav class="hidden md:flex flex-col fixed left-0 top-0 h-screen w-64 bg-primary-container border-r border-outline-variant shadow-md p-sm z-40">
+<div class="mb-lg">
+<h1 class="font-headline-h2 text-headline-h2 font-black text-on-primary-fixed mb-xs">SKYTECH Enterprise</h1>
+<p class="font-label-caps text-label-caps text-on-primary-container">Power Management Portal</p>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-label-caps text-label-caps py-sm rounded-lg mb-lg hover:bg-secondary-container transition-all duration-150 ease-in-out font-bold">
+            New Service Request
+        </button>
+<ul class="flex-1 space-y-xs">
+<li>
+<a class="flex items-center px-sm py-xs text-on-primary-container opacity-80 hover:bg-on-primary-fixed-variant hover:opacity-100 font-label-caps text-label-caps rounded-lg transition-all duration-150 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]" data-icon="precision_manufacturing">precision_manufacturing</span>
+                    Equipment
+                </a>
+</li>
+<li>
+<a class="flex items-center px-sm py-xs bg-secondary text-on-secondary rounded-lg font-bold font-label-caps text-label-caps transition-all duration-150 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]" data-icon="history">history</span>
+                    Service History
+                </a>
+</li>
+<li>
+<a class="flex items-center px-sm py-xs text-on-primary-container opacity-80 hover:bg-on-primary-fixed-variant hover:opacity-100 font-label-caps text-label-caps rounded-lg transition-all duration-150 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]" data-icon="verified">verified</span>
+                    AMC Status
+                </a>
+</li>
+<li>
+<a class="flex items-center px-sm py-xs text-on-primary-container opacity-80 hover:bg-on-primary-fixed-variant hover:opacity-100 font-label-caps text-label-caps rounded-lg transition-all duration-150 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]" data-icon="settings">settings</span>
+                    Settings
+                </a>
+</li>
+</ul>
+<div class="mt-auto border-t border-outline-variant pt-sm">
+<a class="flex items-center px-sm py-xs text-on-primary-container opacity-80 hover:bg-on-primary-fixed-variant hover:opacity-100 font-label-caps text-label-caps rounded-lg transition-all duration-150 ease-in-out" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]" data-icon="logout">logout</span>
+                Logout
+            </a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-0 md:ml-64 p-margin-mobile md:p-margin-desktop dot-grid min-h-screen">
+<header class="mb-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-sm">
+<div>
+<h2 class="font-headline-h1-mobile md:font-headline-h1 text-headline-h1-mobile md:text-headline-h1 text-primary">Service History &amp; Calendar</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-xs">Track past maintenance and upcoming schedules.</p>
+</div>
+<div class="flex gap-sm">
+<button class="flex items-center gap-xs px-sm py-xs border border-secondary text-secondary font-label-caps text-label-caps rounded hover:bg-secondary hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-[18px]" data-icon="download">download</span>
+                    Export Log
+                </button>
+</div>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Timeline View (Left/Main Column) -->
+<div class="lg:col-span-2 space-y-gutter">
+<section class="bg-surface-container-lowest border border-outline-variant rounded-xl shadow-sm p-md">
+<div class="flex justify-between items-center mb-md pb-xs border-b-2 border-secondary">
+<h3 class="font-headline-h2 text-headline-h2 text-primary">Recent Activity Timeline</h3>
+</div>
+<div class="relative border-l border-outline-variant ml-sm space-y-lg">
+<!-- Event 1 -->
+<div class="relative pl-md">
+<div class="absolute -left-[5px] top-1 w-[10px] h-[10px] rounded-full bg-secondary ring-4 ring-surface-container-lowest"></div>
+<div class="bg-surface-container-low border border-outline-variant p-sm rounded-lg hover:border-secondary hover:shadow-md transition-all duration-200">
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-xs gap-xs">
+<span class="font-data-mono text-data-mono text-on-surface-variant">Sep 28, 2023</span>
+<span class="inline-flex items-center gap-base font-label-caps text-label-caps text-primary bg-primary-fixed px-2 py-1 rounded">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Completed
+                                    </span>
+</div>
+<h4 class="font-headline-h2 text-[18px] text-primary mb-xs">Preventive Maintenance</h4>
+<p class="text-on-surface-variant mb-sm">Equipment: <span class="font-medium text-primary">Main Transformer Unit A</span></p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-xs font-data-mono text-[12px] text-on-surface-variant bg-surface-container p-xs rounded">
+<div>Engineer: J. Doe</div>
+<div>Duration: 4.5 hrs</div>
+</div>
+<div class="mt-sm pt-sm border-t border-outline-variant flex justify-end">
+<button class="text-secondary hover:text-secondary-fixed-variant font-label-caps text-label-caps flex items-center gap-xs transition-colors">
+                                        View Report <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="relative pl-md">
+<div class="absolute -left-[5px] top-1 w-[10px] h-[10px] rounded-full bg-error ring-4 ring-surface-container-lowest"></div>
+<div class="bg-surface-container-low border border-outline-variant p-sm rounded-lg hover:border-secondary hover:shadow-md transition-all duration-200">
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-xs gap-xs">
+<span class="font-data-mono text-data-mono text-on-surface-variant">Aug 12, 2023</span>
+<span class="inline-flex items-center gap-base font-label-caps text-label-caps text-error bg-error-container px-2 py-1 rounded">
+<span class="w-2 h-2 rounded-full bg-error"></span> Emergency Call
+                                    </span>
+</div>
+<h4 class="font-headline-h2 text-[18px] text-primary mb-xs">Breaker Trip Reset</h4>
+<p class="text-on-surface-variant mb-sm">Equipment: <span class="font-medium text-primary">Distribution Board B2</span></p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-xs font-data-mono text-[12px] text-on-surface-variant bg-surface-container p-xs rounded">
+<div>Engineer: M. Smith</div>
+<div>Duration: 1.2 hrs</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Calendar & Quick Actions (Right Column) -->
+<div class="space-y-gutter">
+<section class="bg-primary-container text-on-primary-container border border-outline-variant rounded-xl shadow-sm p-md relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="calendar_month">calendar_month</span>
+</div>
+<h3 class="font-headline-h2 text-headline-h2 text-on-primary mb-md pb-xs border-b border-surface-tint relative z-10">Upcoming Schedule</h3>
+<ul class="space-y-sm relative z-10">
+<li class="bg-surface-tint bg-opacity-20 p-sm rounded-lg border border-surface-tint">
+<div class="flex justify-between items-start mb-xs">
+<span class="font-data-mono text-data-mono text-tertiary-fixed">Oct 15, 2023</span>
+<span class="material-symbols-outlined text-tertiary-fixed text-[18px]" data-icon="notifications">notifications</span>
+</div>
+<h4 class="font-medium text-on-primary mb-xs">UPS Health Check</h4>
+<p class="text-[14px] opacity-80">Annual performance verification and battery testing.</p>
+</li>
+<li class="p-sm rounded-lg border border-surface-tint border-opacity-50 hover:bg-surface-tint hover:bg-opacity-10 transition-colors">
+<div class="flex justify-between items-start mb-xs">
+<span class="font-data-mono text-data-mono opacity-70">Nov 02, 2023</span>
+</div>
+<h4 class="font-medium text-on-primary opacity-90 mb-xs">Cooling System Routine</h4>
+<p class="text-[14px] opacity-70">Quarterly filter change and coolant level check.</p>
+</li>
+</ul>
+</section>
+<section class="bg-surface-container-lowest border border-outline-variant rounded-xl shadow-sm p-md">
+<h3 class="font-headline-h2 text-[18px] text-primary mb-sm">Service Summary (YTD)</h3>
+<div class="grid grid-cols-2 gap-sm">
+<div class="bg-surface-container p-sm rounded-lg text-center">
+<span class="block font-data-mono text-[24px] text-secondary font-bold">12</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Preventive</span>
+</div>
+<div class="bg-surface-container p-sm rounded-lg text-center">
+<span class="block font-data-mono text-[24px] text-error font-bold">2</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Reactive</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</body></html>

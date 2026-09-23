@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Three Phase Industrial UPS - SkyTech Electricals</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#001f27",
+                    "surface-dim": "#d8dadc",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#001f27",
+                    "surface": "#f7f9fb",
+                    "tertiary": "#000000",
+                    "on-secondary-fixed": "#001849",
+                    "on-background": "#191c1e",
+                    "on-primary-fixed": "#0d1c32",
+                    "on-secondary-container": "#f9f7ff",
+                    "on-surface": "#191c1e",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#76849f",
+                    "on-primary-fixed-variant": "#39475f",
+                    "surface-container": "#eceef0",
+                    "surface-container-high": "#e6e8ea",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary-fixed": "#b4ebff",
+                    "primary-container": "#0d1c32",
+                    "tertiary-fixed-dim": "#3cd7ff",
+                    "outline-variant": "#c5c6cd",
+                    "surface-tint": "#515f78",
+                    "secondary": "#0050cc",
+                    "secondary-container": "#0266ff",
+                    "on-tertiary-fixed-variant": "#004e5f",
+                    "on-secondary-fixed-variant": "#003fa4",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f2f4f6",
+                    "primary-fixed": "#d6e3ff",
+                    "primary": "#000000",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-bright": "#f7f9fb",
+                    "on-tertiary-container": "#0090ae",
+                    "error-container": "#ffdad6",
+                    "background": "#f7f9fb",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#b3c5ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#44474d",
+                    "inverse-primary": "#b9c7e4",
+                    "inverse-surface": "#2d3133",
+                    "outline": "#75777e",
+                    "secondary-fixed": "#dae1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "16px",
+                    "base": "4px",
+                    "lg": "40px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "xl": "80px",
+                    "xs": "8px",
+                    "md": "24px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-h2": ["Manrope"],
+                    "label-caps": ["JetBrains Mono"],
+                    "headline-h1-mobile": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "data-mono": ["JetBrains Mono"],
+                    "headline-h1": ["Manrope"],
+                    "display-lg": ["Manrope"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-h2": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "headline-h1-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "data-mono": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-h1": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-surface-dim docked full-width top-0 border-b border-outline-variant dark:border-outline flat no shadows transition-all duration-200 ease-in-out flex justify-between items-center px-margin-desktop w-full h-16 sticky z-50 backdrop-blur-md bg-opacity-90">
+<div class="flex items-center gap-lg">
+<a class="font-headline-h2 text-headline-h2 text-primary dark:text-primary-fixed tracking-tight" href="#">SKYTECH ELECTRICALS</a>
+</div>
+<div class="hidden md:flex items-center gap-md">
+<!-- Search Bar (on_right) -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant">search</span>
+<input class="pl-10 pr-4 py-2 border border-outline-variant rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary font-body-md text-body-md transition-colors w-64" placeholder="Search products..." type="text"/>
+</div>
+<div class="flex items-center gap-sm text-on-surface-variant dark:text-on-surface-variant">
+<button class="p-2 rounded-full hover:bg-surface-container-high transition-colors hover:text-secondary dark:hover:text-secondary-fixed">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container-high transition-colors hover:text-secondary dark:hover:text-secondary-fixed">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container-high transition-colors hover:text-secondary dark:hover:text-secondary-fixed">
+<span class="material-symbols-outlined">help</span>
+</button>
+<div class="ml-2 w-8 h-8 rounded-full overflow-hidden border border-outline-variant">
+<img alt="Administrator profile picture" class="w-full h-full object-cover" data-alt="Administrator profile picture showing a professional headshot in a modern office environment, cool lighting, high resolution, industrial tech corporate style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe3i2bdjHOt4EzvvSnoJH7GnjE2qUsa3TU095T6rMaQ_-4lKsbwPl40bvOh44ALMzuRq1PzqFeH3Fix9-P7YHGN31irfUatr5gBZ6PwrcldY0_8RJb6rn6k9eYbyVIgbTmS4yLoUdxsvPHUzI3zYmFS2YPsuXhTxdMTXATP03nBGWDXcFSTE1gfiFpgUbxmr5o9JKDxujDKHBlxdkey7i_xTB5wvc9_6Syd3I0fZyhOdr4RwQJmo8w"/>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Breadcrumbs -->
+<div class="px-margin-mobile md:px-margin-desktop py-sm bg-surface-container-low border-b border-outline-variant">
+<div class="flex items-center gap-2 font-data-mono text-data-mono text-on-surface-variant">
+<a class="hover:text-secondary transition-colors" href="#">Products</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-secondary transition-colors" href="#">UPS Systems</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-on-surface font-medium">Three Phase UPS</span>
+</div>
+</div>
+<!-- Product Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-lg grid grid-cols-1 md:grid-cols-2 gap-xl items-center bg-grid-pattern relative">
+<!-- Image Side -->
+<div class="relative group">
+<div class="absolute inset-0 bg-secondary/5 rounded-xl transform translate-x-4 translate-y-4"></div>
+<div class="relative bg-surface rounded-xl border border-outline-variant p-lg shadow-sm group-hover:shadow-md transition-shadow duration-300 flex justify-center items-center h-[500px]">
+<!-- Product Image -->
+<img alt="Three Phase Industrial UPS" class="max-h-full max-w-full object-contain drop-shadow-xl" data-alt="A highly detailed, professional studio shot of a massive, industrial three-phase UPS system. It is housed in a sleek, deep navy blue and stark white metal cabinet with sharp, structural lines. The front panel features a glowing digital display and precise venting grilles. The lighting is cool, bright, and focused, casting subtle shadows to emphasize its robust engineering and premium technical quality. The background is a clean, neutral white studio space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxz7WadiYFTDIHqa1rEDpYc9vFd6HgE8WAtLQ07DQWXjr4p7N5bAul7q49xlYosRE8YLBPrQn9sn4Rt1GL6glzON66lhyl-BVU-qey8DkzQqsyBDpAkfp3j1y1RIJRlZuuHnCsYLp8h1ZMRII8V99VLZKLP385pGWB13Lj_yWrWx7dHO-eEaAnLg6fAMA9aFlPYXTo1oc9bypRXI2KExNBauFqygRIoj_9HRDXJqsicVE1pV5L-CNN"/>
+<!-- Status Badge overlaid -->
+<div class="absolute top-4 left-4 bg-surface-container border border-outline-variant px-3 py-1 rounded flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-[#10B981]"></div>
+<span class="font-label-caps text-label-caps text-on-surface uppercase">In Stock</span>
+</div>
+</div>
+</div>
+<!-- Content Side -->
+<div class="flex flex-col gap-md">
+<div>
+<h1 class="font-display-lg text-display-lg text-primary mb-xs">Three Phase Industrial UPS</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">High-efficiency, ruggedized uninterrupted power supply engineered for mission-critical industrial applications and heavy-duty manufacturing environments.</p>
+</div>
+<div class="flex gap-4 border-y border-outline-variant py-4 my-2">
+<div class="flex-1 border-r border-outline-variant">
+<div class="font-label-caps text-label-caps text-on-surface-variant mb-1">CAPACITY</div>
+<div class="font-headline-h2 text-headline-h2 text-primary">10kVA - 500kVA</div>
+</div>
+<div class="flex-1 border-r border-outline-variant px-4">
+<div class="font-label-caps text-label-caps text-on-surface-variant mb-1">EFFICIENCY</div>
+<div class="font-headline-h2 text-headline-h2 text-primary">&gt;98%</div>
+</div>
+<div class="flex-1 px-4">
+<div class="font-label-caps text-label-caps text-on-surface-variant mb-1">WARRANTY</div>
+<div class="font-headline-h2 text-headline-h2 text-primary">5 Years</div>
+</div>
+</div>
+<ul class="flex flex-col gap-3 font-body-md text-body-md text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+                        Advanced DSP-based digital control technology
+                    </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+                        True online double conversion architecture
+                    </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+                        Active power factor correction (APFC)
+                    </li>
+</ul>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<button class="bg-primary hover:bg-primary/90 text-on-primary font-body-md text-body-md font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+                        Request a Quote
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border border-secondary text-secondary hover:bg-secondary/5 font-body-md text-body-md font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">support_agent</span>
+                        Talk to an Expert
+                    </button>
+</div>
+</div>
+</section>
+<!-- Tabs & Tech Specs Area -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl bg-surface-container-lowest">
+<div class="border-b border-outline-variant mb-lg flex gap-lg">
+<button class="font-body-lg text-body-lg font-semibold text-secondary border-b-2 border-secondary pb-4 px-2">Technical Specifications</button>
+<button class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors pb-4 px-2">Key Features</button>
+<button class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors pb-4 px-2">Applications</button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-xl">
+<!-- Data Table -->
+<div class="lg:col-span-2 bg-surface border border-outline-variant rounded-xl overflow-hidden">
+<div class="bg-primary text-on-primary px-md py-sm font-data-mono text-data-mono flex items-center justify-between border-b-2 border-secondary">
+<span>SYSTEM SPECIFICATIONS</span>
+<span class="material-symbols-outlined text-secondary">tune</span>
+</div>
+<div class="divide-y divide-outline-variant">
+<div class="flex py-3 px-md hover:bg-surface-container-low transition-colors">
+<div class="w-1/3 font-body-md text-body-md font-medium text-on-surface">Input Voltage</div>
+<div class="w-2/3 font-data-mono text-data-mono text-on-surface-variant">380/400/415 VAC (3-Phase + N + G)</div>
+</div>
+<div class="flex py-3 px-md hover:bg-surface-container-low transition-colors">
+<div class="w-1/3 font-body-md text-body-md font-medium text-on-surface">Input Frequency</div>
+<div class="w-2/3 font-data-mono text-data-mono text-on-surface-variant">50/60 Hz ± 10%</div>
+</div>
+<div class="flex py-3 px-md hover:bg-surface-container-low transition-colors">
+<div class="w-1/3 font-body-md text-body-md font-medium text-on-surface">Output Voltage</div>
+<div class="w-2/3 font-data-mono text-data-mono text-on-surface-variant">380/400/415 VAC ± 1%</div>
+</div>
+<div class="flex py-3 px-md hover:bg-surface-container-low transition-colors">
+<div class="w-1/3 font-body-md text-body-md font-medium text-on-surface">Overload Capacity</div>
+<div class="w-2/3 font-data-mono text-data-mono text-on-surface-variant">110% for 60 min, 125% for 10 min, 150% for 1 min</div>
+</div>
+<div class="flex py-3 px-md hover:bg-surface-container-low transition-colors">
+<div class="w-1/3 font-body-md text-body-md font-medium text-on-surface">Operating Temp</div>
+<div class="w-2/3 font-data-mono text-data-mono text-on-surface-variant">0°C to 40°C</div>
+</div>
+</div>
+</div>
+<!-- Info Cards -->
+<div class="flex flex-col gap-md">
+<div class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm border-t-2 border-t-secondary-container hover:shadow-md hover:border-secondary transition-all">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-secondary-container text-[28px]">electric_bolt</span>
+<h3 class="font-headline-h2 text-headline-h2 text-primary">High Yield Efficiency</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">ECO mode operation yields over 98% efficiency, significantly reducing energy costs and thermal dissipation.</p>
+</div>
+<div class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm hover:shadow-md hover:border-secondary transition-all">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]">settings_input_component</span>
+<h3 class="font-headline-h2 text-headline-h2 text-primary">Scalable Architecture</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Parallel capacity up to 6 units allows for flexible system expansion as power demands grow.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+</body></html>

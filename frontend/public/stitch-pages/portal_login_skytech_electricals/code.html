@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SKYTECH Portal Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#001f27",
+                      "surface-dim": "#d8dadc",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#001f27",
+                      "surface": "#f7f9fb",
+                      "tertiary": "#000000",
+                      "on-secondary-fixed": "#001849",
+                      "on-background": "#191c1e",
+                      "on-primary-fixed": "#0d1c32",
+                      "on-secondary-container": "#f9f7ff",
+                      "on-surface": "#191c1e",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#76849f",
+                      "on-primary-fixed-variant": "#39475f",
+                      "surface-container": "#eceef0",
+                      "surface-container-high": "#e6e8ea",
+                      "primary-fixed-dim": "#b9c7e4",
+                      "surface-variant": "#e0e3e5",
+                      "tertiary-fixed": "#b4ebff",
+                      "primary-container": "#0d1c32",
+                      "tertiary-fixed-dim": "#3cd7ff",
+                      "outline-variant": "#c5c6cd",
+                      "surface-tint": "#515f78",
+                      "secondary": "#0050cc",
+                      "secondary-container": "#0266ff",
+                      "on-tertiary-fixed-variant": "#004e5f",
+                      "on-secondary-fixed-variant": "#003fa4",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f2f4f6",
+                      "primary-fixed": "#d6e3ff",
+                      "primary": "#000000",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface-bright": "#f7f9fb",
+                      "on-tertiary-container": "#0090ae",
+                      "error-container": "#ffdad6",
+                      "background": "#f7f9fb",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed-dim": "#b3c5ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#44474d",
+                      "inverse-primary": "#b9c7e4",
+                      "inverse-surface": "#2d3133",
+                      "outline": "#75777e",
+                      "secondary-fixed": "#dae1ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "16px",
+                      "base": "4px",
+                      "lg": "40px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "64px",
+                      "xl": "80px",
+                      "xs": "8px",
+                      "md": "24px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-h2": ["Manrope"],
+                      "label-caps": ["JetBrains Mono"],
+                      "headline-h1-mobile": ["Manrope"],
+                      "body-md": ["Inter"],
+                      "data-mono": ["JetBrains Mono"],
+                      "headline-h1": ["Manrope"],
+                      "display-lg": ["Manrope"],
+                      "body-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-h2": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                      "headline-h1-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "data-mono": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                      "headline-h1": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .dot-pattern {
+            background-image: radial-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        /* Custom styles to force exact weight on Material Symbols */
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="h-full bg-background text-on-background font-body-md antialiased overflow-hidden selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Note: TopNavBar and SideNavBar are SUPPRESSED for this linear/transactional login screen based on the UX Goal / Relevance Check rules. -->
+<main class="h-full w-full flex flex-col md:flex-row">
+<!-- Left Side: Image / Brand Area (Hidden on small mobile, visible md+) -->
+<div class="hidden md:flex md:w-1/2 lg:w-7/12 relative bg-primary flex-col justify-between overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-80 mix-blend-luminosity" data-alt="A high-quality, professional photograph of a modern, massive industrial electrical substation at dusk. The scene is illuminated by striking, bright white floodlights and subtle electric blue accent lighting, emphasizing the geometric precision and rugged reliability of the heavy machinery. The mood is powerful, technical, and premium, perfectly matching a high-tech corporate engineering aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfr8DHjoQRAL2wTrTFwRnsxlKaMgR-IJII1dPjS0xx5QQnCHedBCkgGQ-9qxy8Rr08FTat44KiuHzWYv8FkOwiQSE6X272u7Kkq1GFIfwNY47aDOjAJhQh1YYRR78ogRi59TH3Z9_5bDXqjYJ0bCAreSSmM25IyNCHva_t-RKhOIMXH9sZPRQJuMlag8TUNuCY3asce0myYcsDTvF2jr3vx-F1t95vISSs_0qE6_mGdAcam2r90bpq')"></div>
+<!-- Grid overlay for technical feel -->
+<div class="absolute inset-0 dot-pattern opacity-30 pointer-events-none"></div>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent pointer-events-none"></div>
+<!-- Content Container -->
+<div class="relative z-10 flex flex-col h-full justify-between p-margin-desktop text-on-primary">
+<!-- Logo Anchor -->
+<div>
+<h1 class="font-display-lg text-display-lg text-on-primary tracking-tight flex items-center gap-sm">
+<span class="material-symbols-outlined text-[48px] filled text-secondary-fixed-dim">bolt</span>
+                        SKYTECH
+                    </h1>
+<p class="font-label-caps text-label-caps text-secondary-fixed-dim mt-xs uppercase tracking-widest">Industrial Portal</p>
+</div>
+<!-- Trust / Value Prop -->
+<div class="max-w-md">
+<p class="font-headline-h2 text-headline-h2 mb-sm text-surface-bright">Precision Energy Management.</p>
+<p class="font-body-lg text-body-lg text-surface-dim opacity-90">
+                        Secure access to real-time analytics, predictive maintenance alerts, and comprehensive asset health tracking across your entire grid infrastructure.
+                    </p>
+<div class="mt-lg flex gap-md">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim">shield_lock</span>
+<span class="font-label-caps text-label-caps opacity-80">SOC2 Type II</span>
+</div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary-fixed-dim">speed</span>
+<span class="font-label-caps text-label-caps opacity-80">99.99% Uptime</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Login Form Area -->
+<div class="w-full md:w-1/2 lg:w-5/12 h-full bg-surface flex items-center justify-center relative dot-pattern overflow-y-auto">
+<!-- Mobile Brand Header (Visible only on mobile) -->
+<div class="absolute top-0 left-0 w-full p-margin-mobile flex justify-center md:hidden bg-surface/90 backdrop-blur-sm z-20 border-b border-outline-variant/30">
+<h1 class="font-headline-h1-mobile text-headline-h1-mobile text-primary tracking-tight flex items-center gap-xs">
+<span class="material-symbols-outlined text-[32px] filled text-secondary-container">bolt</span>
+                    SKYTECH
+                </h1>
+</div>
+<!-- Form Container -->
+<div class="w-full max-w-md px-margin-mobile py-xl md:p-lg relative z-10">
+<!-- Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-lg border border-outline-variant p-lg relative overflow-hidden group">
+<!-- Top Accent Border -->
+<div class="absolute top-0 left-0 w-full h-[3px] bg-secondary-container transition-all duration-300 group-hover:h-[4px]"></div>
+<div class="mb-lg">
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface mb-xs">Welcome Back</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Please authenticate to access the portal.</p>
+</div>
+<!-- Tabs -->
+<div class="flex border-b border-outline-variant mb-lg" role="tablist">
+<button aria-selected="true" class="flex-1 pb-sm font-label-caps text-label-caps text-center border-b-2 border-secondary-container text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-container/50 focus:rounded-sm" id="tab-customer" role="tab">
+                            Customer Login
+                        </button>
+<button aria-selected="false" class="flex-1 pb-sm font-label-caps text-label-caps text-center border-b-2 border-transparent text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-container/50 focus:rounded-sm" id="tab-admin" role="tab">
+                            Admin Login
+                        </button>
+</div>
+<!-- Form -->
+<form action="#" class="space-y-md" method="POST">
+<!-- Email/Username -->
+<div>
+<label class="block font-body-md text-body-md font-semibold text-on-surface mb-xs" for="username">Email / Username</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-sm flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant opacity-70">person</span>
+</div>
+<input class="block w-full pl-xl pr-sm py-sm font-data-mono text-data-mono bg-surface border border-outline-variant rounded-DEFAULT text-on-surface placeholder-on-surface-variant/50 focus:ring-1 focus:ring-primary focus:border-primary transition-colors" id="username" name="username" placeholder="admin@skytech.inc" required="" type="text"/>
+</div>
+</div>
+<!-- Password -->
+<div>
+<div class="flex justify-between items-center mb-xs">
+<label class="block font-body-md text-body-md font-semibold text-on-surface" for="password">Password</label>
+<a class="font-label-caps text-label-caps text-secondary-container hover:text-secondary-fixed transition-colors" href="#">Forgot Password?</a>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-sm flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant opacity-70">key</span>
+</div>
+<input class="block w-full pl-xl pr-sm py-sm font-data-mono text-data-mono bg-surface border border-outline-variant rounded-DEFAULT text-on-surface placeholder-on-surface-variant/50 focus:ring-1 focus:ring-primary focus:border-primary transition-colors" id="password" name="password" placeholder="••••••••" required="" type="password"/>
+<button class="absolute inset-y-0 right-0 pr-sm flex items-center text-on-surface-variant hover:text-on-surface focus:outline-none" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility_off</span>
+</button>
+</div>
+</div>
+<!-- Remember Me -->
+<div class="flex items-center">
+<input class="h-4 w-4 text-secondary-container focus:ring-secondary-container border-outline-variant rounded-sm cursor-pointer" id="remember-me" name="remember-me" type="checkbox"/>
+<label class="ml-sm block font-body-md text-body-md text-on-surface-variant cursor-pointer" for="remember-me">
+                                Remember this device
+                            </label>
+</div>
+<!-- Submit Button -->
+<div class="pt-sm">
+<button class="w-full flex justify-center items-center gap-sm py-sm px-md bg-primary text-on-primary font-body-md text-body-md font-semibold rounded-DEFAULT shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-200 active:scale-[0.98]" type="submit">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+                                Secure Login
+                            </button>
+</div>
+</form>
+<!-- Help / Support Footer -->
+<div class="mt-lg pt-sm border-t border-outline-variant/30 text-center">
+<p class="font-label-caps text-label-caps text-on-surface-variant">
+                            Need help accessing your account? <br class="md:hidden"/>
+<a class="text-secondary-container hover:underline ml-xs" href="#">Contact Support</a>
+</p>
+</div>
+</div>
+</div>
+<!-- Simple Copyright -->
+<div class="absolute bottom-sm right-sm text-right px-margin-mobile w-full pointer-events-none">
+<p class="font-label-caps text-label-caps text-[10px] text-on-surface-variant/50">© 2024 SKYTECH ELECTRICALS</p>
+</div>
+</div>
+</main>
+<script>
+        // Simple JS for tab interaction demonstration
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('[role="tab"]');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    // Reset all tabs
+                    tabs.forEach(t => {
+                        t.setAttribute('aria-selected', 'false');
+                        t.classList.remove('border-secondary-container', 'text-on-surface');
+                        t.classList.add('border-transparent', 'text-on-surface-variant');
+                    });
+                    
+                    // Set active tab
+                    const activeTab = e.currentTarget;
+                    activeTab.setAttribute('aria-selected', 'true');
+                    activeTab.classList.remove('border-transparent', 'text-on-surface-variant');
+                    activeTab.classList.add('border-secondary-container', 'text-on-surface');
+                    
+                    // In a real app, this would also toggle form action/fields or state
+                });
+            });
+        });
+    </script>
+</body></html>

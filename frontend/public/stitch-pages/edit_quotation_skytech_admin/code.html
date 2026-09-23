@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Edit Quotation - SkyTech Admin</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#001f27",
+                      "surface-dim": "#d8dadc",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#001f27",
+                      "surface": "#f7f9fb",
+                      "tertiary": "#000000",
+                      "on-secondary-fixed": "#001849",
+                      "on-background": "#191c1e",
+                      "on-primary-fixed": "#0d1c32",
+                      "on-secondary-container": "#f9f7ff",
+                      "on-surface": "#191c1e",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#76849f",
+                      "on-primary-fixed-variant": "#39475f",
+                      "surface-container": "#eceef0",
+                      "surface-container-high": "#e6e8ea",
+                      "primary-fixed-dim": "#b9c7e4",
+                      "surface-variant": "#e0e3e5",
+                      "tertiary-fixed": "#b4ebff",
+                      "primary-container": "#0d1c32",
+                      "tertiary-fixed-dim": "#3cd7ff",
+                      "outline-variant": "#c5c6cd",
+                      "surface-tint": "#515f78",
+                      "secondary": "#0050cc",
+                      "secondary-container": "#0266ff",
+                      "on-tertiary-fixed-variant": "#004e5f",
+                      "on-secondary-fixed-variant": "#003fa4",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f2f4f6",
+                      "primary-fixed": "#d6e3ff",
+                      "primary": "#000000",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface-bright": "#f7f9fb",
+                      "on-tertiary-container": "#0090ae",
+                      "error-container": "#ffdad6",
+                      "background": "#f7f9fb",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed-dim": "#b3c5ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#44474d",
+                      "inverse-primary": "#b9c7e4",
+                      "inverse-surface": "#2d3133",
+                      "outline": "#75777e",
+                      "secondary-fixed": "#dae1ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "16px",
+                      "base": "4px",
+                      "lg": "40px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "64px",
+                      "xl": "80px",
+                      "xs": "8px",
+                      "md": "24px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-h2": [
+                              "Manrope"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-h1-mobile": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "data-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-h1": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-h2": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-h1-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "data-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-h1": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(circle at 1px 1px, #e2e8f0 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex selection:bg-secondary/20 selection:text-secondary overflow-x-hidden">
+<!-- Side Nav (Docked) -->
+<nav class="hidden md:flex flex-col fixed left-0 top-0 h-screen w-64 bg-primary-container dark:bg-primary-container shadow-md py-lg z-50">
+<div class="px-md mb-xl flex flex-col items-center">
+<h1 class="font-headline-h2 text-headline-h2 text-on-primary dark:text-on-primary">SKYTECH</h1>
+<span class="font-label-caps text-label-caps text-on-primary-container mt-base">Industrial Portal</span>
+</div>
+<button class="mx-md mb-lg bg-secondary text-on-secondary font-body-md font-semibold py-xs px-sm rounded hover:bg-secondary-container transition-colors shadow-sm">
+            New Service Request
+        </button>
+<ul class="flex flex-col gap-base flex-1 overflow-y-auto px-sm">
+<li>
+<a class="flex items-center gap-sm text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 hover:opacity-100 transition-transform duration-150 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-caps text-label-caps">Dashboard</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 hover:opacity-100 transition-transform duration-150 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="font-label-caps text-label-caps">Active AMC</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm bg-secondary text-on-secondary rounded-lg px-md py-sm transition-transform duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined">request_quote</span>
+<span class="font-label-caps text-label-caps">Open Quotes</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 hover:opacity-100 transition-transform duration-150 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined">engineering</span>
+<span class="font-label-caps text-label-caps">Service Requests</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 hover:opacity-100 transition-transform duration-150 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-label-caps text-label-caps">Inventory</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-sm text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 hover:opacity-100 transition-transform duration-150 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-caps text-label-caps">Analytics</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto px-sm pt-md border-t border-primary-fixed-variant">
+<a class="flex items-center gap-sm text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 hover:opacity-100 transition-transform duration-150 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-label-caps text-label-caps">Support</span>
+</a>
+<a class="flex items-center gap-sm text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 hover:opacity-100 transition-transform duration-150 active:scale-95 rounded-lg" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label-caps text-label-caps">Logout</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-0 md:ml-64 bg-surface min-h-screen pb-xl flex flex-col bg-grid-pattern relative">
+<!-- Top App Bar (Mobile) -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile w-full h-16 bg-surface border-b border-outline-variant z-40 sticky top-0">
+<h1 class="font-headline-h2 text-headline-h2 text-primary">SKYTECH</h1>
+<div class="flex gap-sm text-secondary">
+<button><span class="material-symbols-outlined">notifications</span></button>
+<button><span class="material-symbols-outlined">menu</span></button>
+</div>
+</header>
+<!-- Header Context -->
+<div class="px-margin-mobile md:px-margin-desktop py-lg flex flex-col md:flex-row md:items-end justify-between gap-md border-b border-surface-container-high bg-surface/80 backdrop-blur-sm sticky top-0 z-30">
+<div>
+<div class="flex items-center gap-xs text-on-surface-variant font-label-caps text-label-caps mb-xs">
+<a class="hover:text-secondary transition-colors" href="#">QUOTATIONS</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-primary font-bold">QT-2024-0891</span>
+</div>
+<h1 class="font-headline-h1-mobile md:font-headline-h1 text-primary">Edit Quotation</h1>
+</div>
+<div class="flex gap-sm">
+<button class="px-md py-xs border border-secondary text-secondary font-body-md font-semibold rounded hover:bg-secondary/5 transition-colors">Preview PDF</button>
+<button class="px-md py-xs bg-primary text-on-primary font-body-md font-semibold rounded shadow-sm hover:shadow-md transition-all flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">send</span>
+                    Save &amp; Send
+                </button>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop py-lg max-w-5xl w-full mx-auto grid grid-cols-1 gap-md">
+<!-- Document Meta Details Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-sm border-t-2 border-t-secondary transition-all hover:shadow hover:border-outline relative overflow-hidden">
+<h2 class="font-headline-h2 text-headline-h2 text-primary mb-md pb-xs border-b border-surface-container-high">Document Details</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Customer Select -->
+<div class="flex flex-col gap-base">
+<label class="font-body-md font-bold text-primary text-[12px] uppercase">Customer</label>
+<div class="relative">
+<select class="w-full bg-surface border border-outline-variant rounded px-sm py-xs text-on-surface font-body-md focus:border-primary focus:ring-0 appearance-none h-[42px]">
+<option>Apex Industrial Mfg.</option>
+<option>Global Energy Solutions</option>
+<option>TechCorp Facilities</option>
+</select>
+<span class="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 pointer-events-none text-outline">expand_more</span>
+</div>
+</div>
+<!-- Quotation Date -->
+<div class="flex flex-col gap-base">
+<label class="font-body-md font-bold text-primary text-[12px] uppercase">Date Issued</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border border-outline-variant rounded px-sm py-xs text-on-surface-variant font-data-mono text-data-mono h-[42px] cursor-not-allowed" disabled="" type="text" value="Oct 24, 2024"/>
+<span class="material-symbols-outlined absolute right-sm top-1/2 -translate-y-1/2 text-outline">calendar_today</span>
+</div>
+</div>
+<!-- Valid Until -->
+<div class="flex flex-col gap-base">
+<label class="font-body-md font-bold text-primary text-[12px] uppercase">Valid Until</label>
+<div class="relative">
+<input class="w-full bg-surface border border-outline-variant rounded px-sm py-xs text-on-surface font-data-mono text-data-mono focus:border-primary focus:ring-0 h-[42px]" type="date" value="2024-11-24"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Line Items Editor -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg shadow-sm overflow-hidden flex flex-col">
+<div class="p-md border-b border-surface-container-high flex justify-between items-center bg-primary text-on-primary">
+<h2 class="font-headline-h2 text-headline-h2">Products &amp; Services</h2>
+<button class="text-on-primary hover:text-secondary-fixed-dim flex items-center gap-xs font-label-caps text-label-caps transition-colors">
+<span class="material-symbols-outlined text-[18px]">add_circle</span> ADD ITEM
+                    </button>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse min-w-[800px]">
+<thead class="bg-surface-container text-on-surface-variant font-label-caps text-label-caps border-b border-outline-variant">
+<tr>
+<th class="p-sm w-12 text-center">#</th>
+<th class="p-sm">Description</th>
+<th class="p-sm w-32 text-right">Qty</th>
+<th class="p-sm w-48 text-right">Unit Price (INR)</th>
+<th class="p-sm w-48 text-right">Total (INR)</th>
+<th class="p-sm w-16"></th>
+</tr>
+</thead>
+<tbody class="font-body-md divide-y divide-surface-container-high">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="p-sm text-center text-on-surface-variant font-data-mono">1</td>
+<td class="p-sm">
+<input class="w-full bg-transparent border-0 border-b border-transparent focus:border-secondary focus:ring-0 px-2 py-1 font-body-md font-medium text-primary" type="text" value="Industrial Circuit Breaker 400A"/>
+<input class="w-full bg-transparent border-0 border-b border-transparent focus:border-secondary focus:ring-0 px-2 py-1 text-[13px] text-on-surface-variant mt-1 font-data-mono" type="text" value="Part No: ICB-400-X"/>
+</td>
+<td class="p-sm text-right">
+<input class="w-20 bg-surface border border-outline-variant rounded px-2 py-1 text-right font-data-mono focus:border-primary focus:ring-0 ml-auto" type="number" value="12"/>
+</td>
+<td class="p-sm text-right">
+<input class="w-full bg-transparent border-0 border-b border-transparent focus:border-secondary focus:ring-0 px-2 py-1 text-right font-data-mono" type="text" value="15,400.00"/>
+</td>
+<td class="p-sm text-right font-data-mono font-medium">
+                                    184,800.00
+                                </td>
+<td class="p-sm text-center">
+<button class="text-outline hover:text-error transition-colors opacity-0 group-hover:opacity-100"><span class="material-symbols-outlined">delete</span></button>
+</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="p-sm text-center text-on-surface-variant font-data-mono">2</td>
+<td class="p-sm">
+<input class="w-full bg-transparent border-0 border-b border-transparent focus:border-secondary focus:ring-0 px-2 py-1 font-body-md font-medium text-primary" type="text" value="Installation &amp; Commissioning"/>
+<input class="w-full bg-transparent border-0 border-b border-transparent focus:border-secondary focus:ring-0 px-2 py-1 text-[13px] text-on-surface-variant mt-1 font-data-mono" type="text" value="Labor charges per site"/>
+</td>
+<td class="p-sm text-right">
+<input class="w-20 bg-surface border border-outline-variant rounded px-2 py-1 text-right font-data-mono focus:border-primary focus:ring-0 ml-auto" type="number" value="1"/>
+</td>
+<td class="p-sm text-right">
+<input class="w-full bg-transparent border-0 border-b border-transparent focus:border-secondary focus:ring-0 px-2 py-1 text-right font-data-mono" type="text" value="45,000.00"/>
+</td>
+<td class="p-sm text-right font-data-mono font-medium">
+                                    45,000.00
+                                </td>
+<td class="p-sm text-center">
+<button class="text-outline hover:text-error transition-colors opacity-0 group-hover:opacity-100"><span class="material-symbols-outlined">delete</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Totals Section -->
+<div class="bg-surface p-md flex flex-col md:flex-row justify-between items-start md:items-end gap-md border-t border-outline-variant">
+<div class="w-full md:w-1/2">
+<label class="font-body-md font-bold text-primary text-[12px] uppercase block mb-xs">Terms &amp; Notes</label>
+<textarea class="w-full bg-surface border border-outline-variant rounded p-sm text-on-surface font-body-md focus:border-primary focus:ring-0 h-24 resize-none">Payment terms: 30 days net.
+Delivery within 4 weeks of PO receipt.</textarea>
+</div>
+<div class="w-full md:w-1/3 flex flex-col gap-sm bg-surface-container-lowest p-sm border border-outline-variant rounded">
+<div class="flex justify-between items-center font-data-mono text-data-mono text-on-surface-variant">
+<span>Subtotal</span>
+<span>229,800.00</span>
+</div>
+<div class="flex justify-between items-center font-data-mono text-data-mono text-on-surface-variant border-b border-outline-variant pb-sm">
+<span>GST (18%)</span>
+<span>41,364.00</span>
+</div>
+<div class="flex justify-between items-center font-data-mono text-[18px] font-bold text-primary pt-xs">
+<span>Grand Total</span>
+<span>271,164.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

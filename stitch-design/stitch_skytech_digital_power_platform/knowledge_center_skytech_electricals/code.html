@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SKYTECH ELECTRICALS - Knowledge Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#001f27",
+                    "surface-dim": "#d8dadc",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#001f27",
+                    "surface": "#f7f9fb",
+                    "tertiary": "#000000",
+                    "on-secondary-fixed": "#001849",
+                    "on-background": "#191c1e",
+                    "on-primary-fixed": "#0d1c32",
+                    "on-secondary-container": "#f9f7ff",
+                    "on-surface": "#191c1e",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#76849f",
+                    "on-primary-fixed-variant": "#39475f",
+                    "surface-container": "#eceef0",
+                    "surface-container-high": "#e6e8ea",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "surface-variant": "#e0e3e5",
+                    "tertiary-fixed": "#b4ebff",
+                    "primary-container": "#0d1c32",
+                    "tertiary-fixed-dim": "#3cd7ff",
+                    "outline-variant": "#c5c6cd",
+                    "surface-tint": "#515f78",
+                    "secondary": "#0050cc",
+                    "secondary-container": "#0266ff",
+                    "on-tertiary-fixed-variant": "#004e5f",
+                    "on-secondary-fixed-variant": "#003fa4",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#f2f4f6",
+                    "primary-fixed": "#d6e3ff",
+                    "primary": "#000000",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-bright": "#f7f9fb",
+                    "on-tertiary-container": "#0090ae",
+                    "error-container": "#ffdad6",
+                    "background": "#f7f9fb",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#b3c5ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#44474d",
+                    "inverse-primary": "#b9c7e4",
+                    "inverse-surface": "#2d3133",
+                    "outline": "#75777e",
+                    "secondary-fixed": "#dae1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "16px",
+                    "base": "4px",
+                    "lg": "40px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "xl": "80px",
+                    "xs": "8px",
+                    "md": "24px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-h2": [
+                            "Manrope"
+                    ],
+                    "label-caps": [
+                            "JetBrains Mono"
+                    ],
+                    "headline-h1-mobile": [
+                            "Manrope"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "data-mono": [
+                            "JetBrains Mono"
+                    ],
+                    "headline-h1": [
+                            "Manrope"
+                    ],
+                    "display-lg": [
+                            "Manrope"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "headline-h2": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-h1-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.5",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "data-mono": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-h1": [
+                            "36px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest border-b border-outline-variant shadow-sm w-full sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-7xl mx-auto h-[72px]">
+<!-- Brand -->
+<div class="flex-shrink-0 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<a class="font-headline-h2 text-headline-h2 font-bold text-primary" href="#">SKYTECH ELECTRICALS</a>
+</div>
+<!-- Nav Links (Desktop) -->
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">About</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Products</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Industries</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#">Projects</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-md">
+<a class="hidden md:inline-flex text-secondary font-semibold border-b-2 border-secondary font-body-md text-body-md" href="#">Blog</a>
+<a class="hidden lg:inline-flex items-center justify-center bg-primary-container text-on-primary border-outline-variant hover:bg-secondary-container transition-all duration-200 active:scale-95 px-md py-xs rounded font-label-caps text-label-caps" href="#">Get a Quote</a>
+<button aria-label="Support" class="text-on-surface-variant hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section: Featured Article -->
+<section class="bg-surface px-margin-mobile md:px-margin-desktop py-xl">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row gap-gutter bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-sm hover:border-secondary transition-all duration-300">
+<div class="md:w-1/2 relative min-h-[300px]">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A high-quality, professional photograph of a large industrial UPS (Uninterruptible Power Supply) system in a modern server room environment. The scene is brightly lit with cool white LED lights, reflecting off the clean, metallic surfaces of the electrical equipment. The aesthetic is highly technical, pristine, and precise, aligning with a corporate modernist style. Deep blacks of the server racks contrast with the sterile white environment and subtle electric blue indicator lights on the hardware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv3BEJg0nJq1oIRpJA9Xu5GyxSmGeDtWrlkwinVHTjIleukBV39Zswyvk50S3DHlkTsq2JAR0e9wLlSbY4GgVA2VQP1jP1wzRTrqyYdILO6M3YVTqzwmnguld6EPrhyWwwIDMxtutd6j9vdvjU2nSU8Nuac869xm3ZHdPDzNYJ40mCTXlR72tGEptUbLBI6HN-ZDzUXIP81UJG5ngSARJTvQiBdjRkSpK9gP86jSrPpkjfioE3bhnM"/>
+</div>
+<div class="md:w-1/2 p-lg flex flex-col justify-center bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNFMkU4RjAiLz48L3N2Zz4=')]">
+<div class="flex items-center gap-xs mb-sm">
+<span class="bg-secondary-container/10 text-secondary px-xs py-[2px] rounded-sm font-label-caps text-label-caps flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                                Featured
+                            </span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">OCT 24, 2024</span>
+</div>
+<h1 class="font-display-lg text-headline-h1-mobile md:text-display-lg text-on-surface mb-sm">How to Calculate UPS Backup Time for Enterprise Networks</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-md">Understanding the precise load requirements and battery capacity formulas to ensure zero downtime during critical power failures.</p>
+<a class="inline-flex items-center gap-xs text-secondary font-semibold font-body-md text-body-md hover:text-secondary-container transition-colors group w-max" href="#">
+                            Read Full Article
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Search & Filters -->
+<section class="bg-surface-container-low border-y border-outline-variant py-md px-margin-mobile md:px-margin-desktop sticky top-[72px] z-40 backdrop-blur-md bg-opacity-90">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-sm">
+<!-- Search -->
+<div class="relative w-full md:w-96">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="search">search</span>
+<input class="w-full bg-surface-container-lowest border border-outline-variant focus:border-primary-container focus:ring-0 rounded-lg py-xs pl-xl pr-sm font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant transition-colors" placeholder="Search technical articles..." type="text"/>
+</div>
+<!-- Filters -->
+<div class="flex overflow-x-auto w-full md:w-auto pb-2 md:pb-0 gap-sm scrollbar-hide">
+<button class="whitespace-nowrap px-sm py-xs bg-primary-container text-on-primary rounded-lg font-label-caps text-label-caps transition-colors">All Topics</button>
+<button class="whitespace-nowrap px-sm py-xs bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-secondary hover:text-secondary rounded-lg font-label-caps text-label-caps transition-colors">UPS Systems</button>
+<button class="whitespace-nowrap px-sm py-xs bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-secondary hover:text-secondary rounded-lg font-label-caps text-label-caps transition-colors">Batteries</button>
+<button class="whitespace-nowrap px-sm py-xs bg-surface-container-lowest border border-outline-variant text-on-surface hover:border-secondary hover:text-secondary rounded-lg font-label-caps text-label-caps transition-colors">Maintenance</button>
+</div>
+</div>
+</section>
+<!-- Article Grid -->
+<section class="px-margin-mobile md:px-margin-desktop py-xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:-translate-y-1 hover:shadow-md hover:border-secondary transition-all duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden border-b-2 border-transparent group-hover:border-secondary transition-colors">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up, high-resolution macro shot of the internal circuitry and battery terminals of an industrial VRLA battery. The lighting is precise and analytical, highlighting the metallic textures and colored wiring against a dark, slate-gray background. The overall aesthetic is highly technical, precise, and clean, fitting a premium corporate engineering brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8s943-iGXAigipO2nTdS22lTPHcDi9fDImzdPcmDYiUqJzT7ExbR8_bQsc9gepRSDEmg9CmUkJA0-EBnpJlmHL9CHpeFy_NPgXjG4rJrD3RFKyWyeGRGZJycCP3QIiFRMHfd76MyfmT_qkVV1KSiqce6WpBL4hWc-dmQ1EyY-yD7nF4IDbYTQhU_ncc2O_vwo-t64u1D61F2p0kBtjmabw5tAmcPz5sSVKrMwJt_ybEZbQtEViNdu"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest/90 backdrop-blur px-xs py-[2px] rounded font-label-caps text-label-caps text-on-surface border border-outline-variant">BATTERIES</div>
+</div>
+<div class="p-sm flex flex-col flex-grow">
+<div class="font-data-mono text-data-mono text-on-surface-variant mb-xs">OCT 18, 2024</div>
+<h3 class="font-headline-h2 text-headline-h2 text-on-surface mb-xs group-hover:text-secondary transition-colors">VRLA vs SMF Batteries: An Engineering Analysis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow line-clamp-3">A detailed comparison of Valve Regulated Lead-Acid and Sealed Maintenance Free batteries for high-demand industrial applications.</p>
+<a class="inline-flex items-center gap-xs text-secondary font-semibold font-body-md text-body-md group/link mt-auto" href="#">
+                            Read Article
+                            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:-translate-y-1 hover:shadow-md hover:border-secondary transition-all duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden border-b-2 border-transparent group-hover:border-secondary transition-colors">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional photograph of a technician's gloved hand holding a digital multimeter next to an open electrical distribution panel. The setting is an industrial facility, well-lit with high-contrast, clinical lighting emphasizing safety and precision. The color palette focuses on slate grays, stark whites, and the vivid yellow/red of the testing equipment, conveying technical expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsosFKkTQSJdDItpWC1O9_h92FUTUvn9gcArLhE22xagA4IsD6-aiT032hWfvV0C-sSCGQVrkWcBFhUCZ3NmTDuYDIWw5HdQ1paluC0qmnjKm8lNem5yEwqlXSRS5DwQ2qbI_8zFMUKs38zMcD96JzpIwGl_fij7YxV3e3IOKnin_o4hU7yS5k98uu_cesCfiHMCG8CAFKcxhygiYSbgj6ZRAakyUQE4Ja6-RU1NNov5qRUe4bc9P-"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest/90 backdrop-blur px-xs py-[2px] rounded font-label-caps text-label-caps text-on-surface border border-outline-variant">MAINTENANCE</div>
+</div>
+<div class="p-sm flex flex-col flex-grow">
+<div class="font-data-mono text-data-mono text-on-surface-variant mb-xs">OCT 12, 2024</div>
+<h3 class="font-headline-h2 text-headline-h2 text-on-surface mb-xs group-hover:text-secondary transition-colors">Preventative Maintenance Schedules for 3-Phase UPS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow line-clamp-3">Standard operating procedures for quarterly and annual maintenance to extend the lifecycle of 3-phase Uninterruptible Power Supplies.</p>
+<a class="inline-flex items-center gap-xs text-secondary font-semibold font-body-md text-body-md group/link mt-auto" href="#">
+                            Read Article
+                            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:-translate-y-1 hover:shadow-md hover:border-secondary transition-all duration-300 flex flex-col">
+<div class="h-48 relative overflow-hidden border-b-2 border-transparent group-hover:border-secondary transition-colors">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist, abstract 3D render representing data flow and power grid efficiency. Glowing electric blue lines traverse a sleek, dark metallic surface arranged in a grid pattern. The aesthetic is ultra-modern, corporate, and technological, emphasizing energy management and precision engineering in a sleek, high-end visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKeH5oiBRDI-u8AU5ETwzcazs1hc3qh3Sj30WhFpts8STewmm3VpBvlyvY_btyAPhsg4TwEOGcQuGj-d5xVi8YEfaazMVJcBmYrO4hMULMA7Ck1ezTJcf8RneYRPzGfOjRq2g3gjoiraCXGhIieTyRKyQSIhjSY8_L54k9aGTVQTn2Cz8dHIBPJEXCoESZJKRz-2ylf1xHlqG5cdpPcXPD9e-LjsgU6ksdKi-ryZbduYaPP8NAdmZM"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest/90 backdrop-blur px-xs py-[2px] rounded font-label-caps text-label-caps text-on-surface border border-outline-variant">UPS SYSTEMS</div>
+</div>
+<div class="p-sm flex flex-col flex-grow">
+<div class="font-data-mono text-data-mono text-on-surface-variant mb-xs">SEP 28, 2024</div>
+<h3 class="font-headline-h2 text-headline-h2 text-on-surface mb-xs group-hover:text-secondary transition-colors">Interpreting UPS Efficiency Curves</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow line-clamp-3">How to read manufacturer load profiles and optimize your data center's Power Usage Effectiveness (PUE) through correct sizing.</p>
+<a class="inline-flex items-center gap-xs text-secondary font-semibold font-body-md text-body-md group/link mt-auto" href="#">
+                            Read Article
+                            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+<!-- Load More -->
+<div class="max-w-7xl mx-auto flex justify-center mt-lg">
+<button class="border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary px-lg py-sm rounded-lg font-label-caps text-label-caps transition-all duration-200">Load More Articles</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container py-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="md:col-span-2">
+<div class="font-headline-h1 text-headline-h1 text-white mb-xs flex items-center gap-2">
+<span class="material-symbols-outlined text-white" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                    SKYTECH
+                </div>
+<p class="text-on-primary-container opacity-80 font-body-md text-body-md max-w-sm mb-md">Premium industrial electrical solutions and knowledge management.</p>
+<div class="font-data-mono text-data-mono text-on-primary-container opacity-70">
+                    © 2024 SKYTECH ELECTRICALS. All rights reserved.
+                </div>
+</div>
+<div class="flex flex-col gap-xs">
+<h4 class="font-label-caps text-label-caps text-white opacity-50 mb-xs">LEGAL</h4>
+<a class="text-on-primary-container font-body-md text-body-md opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-primary-container font-body-md text-body-md opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-xs">
+<h4 class="font-label-caps text-label-caps text-white opacity-50 mb-xs">COMPANY</h4>
+<a class="text-on-primary-container font-body-md text-body-md opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">GSTIN Details</a>
+<a class="text-on-primary-container font-body-md text-body-md opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">PAN Info</a>
+</div>
+</div>
+</footer>
+</body></html>

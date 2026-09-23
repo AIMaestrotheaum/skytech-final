@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SKYTECH ELECTRICALS - Project Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#001f27",
+                        "surface-dim": "#d8dadc",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#001f27",
+                        "surface": "#f7f9fb",
+                        "tertiary": "#000000",
+                        "on-secondary-fixed": "#001849",
+                        "on-background": "#191c1e",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-secondary-container": "#f9f7ff",
+                        "on-surface": "#191c1e",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#76849f",
+                        "on-primary-fixed-variant": "#39475f",
+                        "surface-container": "#eceef0",
+                        "surface-container-high": "#e6e8ea",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "surface-variant": "#e0e3e5",
+                        "tertiary-fixed": "#b4ebff",
+                        "primary-container": "#0d1c32",
+                        "tertiary-fixed-dim": "#3cd7ff",
+                        "outline-variant": "#c5c6cd",
+                        "surface-tint": "#515f78",
+                        "secondary": "#0050cc",
+                        "secondary-container": "#0266ff",
+                        "on-tertiary-fixed-variant": "#004e5f",
+                        "on-secondary-fixed-variant": "#003fa4",
+                        "on-error": "#ffffff",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-fixed": "#d6e3ff",
+                        "primary": "#000000",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-bright": "#f7f9fb",
+                        "on-tertiary-container": "#0090ae",
+                        "error-container": "#ffdad6",
+                        "background": "#f7f9fb",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#44474d",
+                        "inverse-primary": "#b9c7e4",
+                        "inverse-surface": "#2d3133",
+                        "outline": "#75777e",
+                        "secondary-fixed": "#dae1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "16px",
+                        "base": "4px",
+                        "lg": "40px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "xl": "80px",
+                        "xs": "8px",
+                        "md": "24px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-h2": ["Manrope"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-h1-mobile": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "data-mono": ["JetBrains Mono"],
+                        "headline-h1": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-h2": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-h1-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "data-mono": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "headline-h1": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .dot-pattern {
+            background-image: radial-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col dot-pattern relative">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-surface-container-highest shadow-sm border-b border-outline-variant dark:border-outline docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-7xl mx-auto z-50 transition-all duration-200 active:scale-95">
+<div class="flex items-center gap-md">
+<a class="font-headline-h2 text-headline-h2 font-bold text-primary dark:text-on-primary-fixed" href="#">SKYTECH ELECTRICALS</a>
+<div class="hidden md:flex gap-sm ml-lg">
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors font-body-md text-body-md py-2" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors font-body-md text-body-md py-2" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors font-body-md text-body-md py-2" href="#">Products</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors font-body-md text-body-md py-2" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors font-body-md text-body-md py-2" href="#">Industries</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-semibold border-b-2 border-secondary font-body-md text-body-md py-2" href="#">Projects</a>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-sm">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-secondary dark:hover:text-secondary-fixed transition-all" style="font-variation-settings: 'FILL' 0;">contact_support</span>
+<button class="px-md py-sm bg-transparent border border-secondary text-secondary font-body-md font-semibold rounded hover:bg-secondary hover:text-on-secondary transition-all">Blog</button>
+<button class="px-md py-sm bg-primary-container text-on-primary border border-transparent font-body-md font-semibold rounded hover:bg-secondary-container transition-all">Get a Quote</button>
+</div>
+<button class="md:hidden flex items-center p-sm">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col relative z-10 w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl gap-xl">
+<!-- Header Section -->
+<section class="flex flex-col gap-sm max-w-3xl">
+<h1 class="font-headline-h1-mobile text-headline-h1-mobile md:font-headline-h1 md:text-headline-h1 text-primary">SKYTECH Project Gallery</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Explore our portfolio of high-performance electrical installations, focusing on critical power infrastructure and precision engineering.</p>
+<!-- Category Filters -->
+<div class="flex flex-wrap gap-sm mt-md">
+<button class="px-md py-xs bg-primary-container text-on-primary font-label-caps text-label-caps rounded-full shadow-sm hover:bg-secondary-container transition-all">All</button>
+<button class="px-md py-xs bg-surface-container-highest text-on-surface border border-outline-variant font-label-caps text-label-caps rounded-full hover:border-secondary transition-all">UPS Installation</button>
+<button class="px-md py-xs bg-surface-container-highest text-on-surface border border-outline-variant font-label-caps text-label-caps rounded-full hover:border-secondary transition-all">Battery Installation</button>
+<button class="px-md py-xs bg-surface-container-highest text-on-surface border border-outline-variant font-label-caps text-label-caps rounded-full hover:border-secondary transition-all">Site Visits</button>
+</div>
+</section>
+<!-- Masonry Grid -->
+<section class="columns-1 sm:columns-2 lg:columns-3 gap-gutter space-y-gutter">
+<!-- Gallery Item 1 -->
+<div class="gallery-item relative overflow-hidden rounded bg-surface-container-lowest border border-outline-variant shadow-sm break-inside-avoid cursor-pointer">
+<img class="w-full h-auto object-cover gallery-image transition-transform duration-500 ease-out" data-alt="A high-resolution photograph of a massive industrial UPS (Uninterruptible Power Supply) system being installed in a pristine, brightly lit data center. The equipment is sleek and modern, characterized by deep navy and bright electric blue accents against metallic gray chassis. Cables are meticulously routed, demonstrating precision engineering. The lighting is cool, clinical white, emphasizing the high-tech, corporate modernism aesthetic of the space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJpDJ9aVkwMolpb8AuT4yw7TZoN8PiaP3Le2GXr3plql9PMLsclgLl5DR6oMbJNFtG_UwEPC3JjADmOYL0BSajq-MwxfXukn5lxCUfjORqNera6LcXmVU-Hk4R1KJeL_iBZpwxrhQVladSLvwTsTz5zZRZ2HpOaCDQPvfvbD-fLtvBlSgC1xF0YYMwjmFOEjO83dP7jchZ1cn_QWiv_clVVSe7Vb9XqOUVBuQMBxzep6P672zeqw8h"/>
+<div class="gallery-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-md">
+<span class="font-label-caps text-label-caps text-secondary-fixed mb-base">UPS Installation</span>
+<h3 class="font-headline-h2 text-headline-h2 text-on-primary">Data Center Power Hub - Phase 1</h3>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="gallery-item relative overflow-hidden rounded bg-surface-container-lowest border border-outline-variant shadow-sm break-inside-avoid cursor-pointer">
+<img class="w-full h-auto object-cover gallery-image transition-transform duration-500 ease-out aspect-[3/4]" data-alt="A detailed close-up shot of a massive array of heavy-duty industrial batteries perfectly aligned on steel racks in a clean facility. The batteries have stark white casings with bold navy labels. An engineer's hand, wearing a dark anti-static glove, is visible adjusting a terminal connection. The lighting highlights the geometric repetition and structured whitespace of the installation, conveying rugged reliability and technical precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8InV82QqxLPjYDN3p3qop-akP2Sp7Nyg1KMUTjIU4qIkiwMkFF_o4i5OHdnbwLxMKANp0DQ6GBWjwKB4aDw48XmCf2CEltVyYpKxPuPfexsMF0qoTq-gzhj7gzU0Xunj0luTX_6ebY7wUSRTV1bIFWTeiXE0-lux4FJWP65IFTH0UWDS_KCHVvEP30soOlIoqFsICdadIJ-VpKrSVShOTmZTDkEZz0Cn4xObRJr1K_MBDRydSGjsI"/>
+<div class="gallery-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-md">
+<span class="font-label-caps text-label-caps text-secondary-fixed mb-base">Battery Installation</span>
+<h3 class="font-headline-h2 text-headline-h2 text-on-primary">High-Capacity Storage Array</h3>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="gallery-item relative overflow-hidden rounded bg-surface-container-lowest border border-outline-variant shadow-sm break-inside-avoid cursor-pointer">
+<img class="w-full h-auto object-cover gallery-image transition-transform duration-500 ease-out aspect-video" data-alt="A wide angle architectural photo of a modern corporate building's electrical control room during a site visit. Two engineers in crisp white hardhats and deep navy uniforms are reviewing digital schematics on a ruggedized tablet. The room features subtle background grid patterns on the walls and glowing monospaced data readouts on control panels. The atmosphere conveys authority and forward-thinking innovation in a bright light-mode setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuUIR6ZmLe7GpxUcoxV8fUQvhLLHydgbUpgxU-nmDzg0loZQSatuGxuw4RDkdEod3mIDWweVOKmTZruhAXNgJuCXJSw2d3kRPHuV6w7LDBksMa5cnYzS-We-xkIPrjSC9RWmlEK4N7B-YHFxqApUvoOyNWSVUi2vBQMRYQLwhf1b4fRJdltVsPNcmt9JyEYkzmOKDSSrgt2QYfXGc9-6zKEacT-yoBpgzn4WECIc9rzCmTasksXBBT"/>
+<div class="gallery-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-md">
+<span class="font-label-caps text-label-caps text-secondary-fixed mb-base">Site Visits</span>
+<h3 class="font-headline-h2 text-headline-h2 text-on-primary">Corporate HQ Infrastructure Audit</h3>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="gallery-item relative overflow-hidden rounded bg-surface-container-lowest border border-outline-variant shadow-sm break-inside-avoid cursor-pointer">
+<img class="w-full h-auto object-cover gallery-image transition-transform duration-500 ease-out aspect-square" data-alt="A macro shot of intricate wiring within a commercial UPS unit, focusing on perfectly parallel electric blue and crisp white wires bound together. The background is slightly blurred but suggests a pristine, high-tech industrial environment. A subtle deep navy shadow contrasts the bright wires, emphasizing the structural integrity and precision of the electrical work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-6OTQOR09hKFFVVnKmcxYJDD5Zb-H1VH3ikFRz5G6TZisk6moZD6LZsivvV6l5OB0Cw28_aDuyiSpbfq8aiGsQ_D1m358E6D-02r6O031_j6Lrf_UGbZs6P7FvkFoxDyC0uzc0BVzuo8fxVXXDOuHKEAx-byLtCpPLDkQI4YvXUXa0Vwm9Mp-Xlw6vLggMCqxZ2o6Rd7lD22LLGefXY6tXQGbOjmtPBv95zcB1L8rFXh7Yx-r8aAc"/>
+<div class="gallery-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-md">
+<span class="font-label-caps text-label-caps text-secondary-fixed mb-base">UPS Installation</span>
+<h3 class="font-headline-h2 text-headline-h2 text-on-primary">Precision Wiring Detail</h3>
+</div>
+</div>
+<!-- Gallery Item 5 -->
+<div class="gallery-item relative overflow-hidden rounded bg-surface-container-lowest border border-outline-variant shadow-sm break-inside-avoid cursor-pointer">
+<img class="w-full h-auto object-cover gallery-image transition-transform duration-500 ease-out aspect-[4/3]" data-alt="A dynamic shot showing a large scale commercial battery room with rows of towering server-like battery cabinets. The dominant colors are pure white surfaces contrasted with deep midnight tones of the cabinet frames. An electric blue LED status indicator glows softly on one unit. The aesthetic is clean, dense, and evokes high-voltage energy management." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAykYGZz0GoSm1xFPsaIx7E36jSJqMNOPhIolHup5C7w_r8HbojH1em3o6OqLsHWqukBvnGZR6Fkk2WgzkZnf7_QJOxT8cRXvx1x0VvKaLnJCcG7rc9xNH7GWBVTjUlOJWfFjvN1X3YJEQN422NJPJhprf5gGN1lgrrS8KId6o9lvzCrmoa9gdlEQU7B-LH-88FCqkU9unsuUF8wiN0J7wiZjpujMvHrMtCGtcBfmMDcPs63ZRV4ZQp"/>
+<div class="gallery-overlay absolute inset-0 bg-primary/80 opacity-0 transition-opacity duration-300 flex flex-col justify-end p-md">
+<span class="font-label-caps text-label-caps text-secondary-fixed mb-base">Battery Installation</span>
+<h3 class="font-headline-h2 text-headline-h2 text-on-primary">Commercial Power Reserve Hub</h3>
+</div>
+</div>
+<!-- Gallery Item 6 -->
+<div class="gallery-item relative overflow-hidden rounded bg-surface-container-lowest border border-outline-variant shadow-sm break-inside-avoid cursor-pointer flex items-center justify-center p-xl border-dashed bg-surface-container-low hover:border-secondary transition-colors">
+<div class="text-center flex flex-col items-center gap-sm">
+<span class="material-symbols-outlined text-outline text-4xl" style="font-variation-settings: 'FILL' 0;">add_photo_alternate</span>
+<span class="font-body-md text-on-surface-variant font-medium">More projects coming soon</span>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="flex justify-center mt-lg mb-xl">
+<button class="px-xl py-md bg-primary-container text-on-primary font-body-lg font-bold rounded shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex items-center gap-sm">
+                View All Projects
+                <span class="material-symbols-outlined text-on-primary" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-surface-container-lowest text-on-primary-container dark:text-on-surface font-body-md w-full py-lg border-t border-secondary mt-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2">
+<h2 class="font-headline-h1 text-headline-h1 text-white mb-sm">SKYTECH ELECTRICALS</h2>
+<p class="text-on-primary-container opacity-80">© 2024 SKYTECH ELECTRICALS. All rights reserved.</p>
+</div>
+<div class="col-span-1 md:col-span-2 flex flex-wrap gap-md justify-start md:justify-end items-end">
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Terms of Service</a>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">GSTIN Details</a>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">PAN Info</a>
+</div>
+</div>
+</footer>
+</body></html>

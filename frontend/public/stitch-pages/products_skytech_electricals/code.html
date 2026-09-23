@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products | SKYTECH ELECTRICALS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#3cd7ff",
+                    "secondary": "#0050cc",
+                    "surface-bright": "#f7f9fb",
+                    "outline": "#75777e",
+                    "tertiary-fixed": "#b4ebff",
+                    "surface-container-highest": "#e0e3e5",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#2d3133",
+                    "surface-dim": "#d8dadc",
+                    "secondary-container": "#0266ff",
+                    "primary-fixed": "#d6e3ff",
+                    "on-surface-variant": "#44474d",
+                    "background": "#f7f9fb",
+                    "on-surface": "#191c1e",
+                    "surface-container-high": "#e6e8ea",
+                    "surface-variant": "#e0e3e5",
+                    "outline-variant": "#c5c6cd",
+                    "on-primary-fixed": "#0d1c32",
+                    "on-tertiary-container": "#0090ae",
+                    "primary-container": "#0d1c32",
+                    "on-background": "#191c1e",
+                    "secondary-fixed": "#dae1ff",
+                    "on-primary-fixed-variant": "#39475f",
+                    "on-tertiary-fixed": "#001f27",
+                    "on-tertiary-fixed-variant": "#004e5f",
+                    "on-secondary-fixed": "#001849",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "on-secondary-container": "#f9f7ff",
+                    "tertiary-container": "#001f27",
+                    "on-primary-container": "#76849f",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#b9c7e4",
+                    "tertiary": "#000000",
+                    "surface-container-low": "#f2f4f6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eceef0",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#515f78",
+                    "on-primary": "#ffffff",
+                    "surface": "#f7f9fb",
+                    "secondary-fixed-dim": "#b3c5ff",
+                    "primary": "#000000",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#003fa4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "gutter": "24px",
+                    "sm": "16px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px",
+                    "xl": "80px",
+                    "lg": "40px",
+                    "base": "4px",
+                    "xs": "8px"
+            },
+            "fontFamily": {
+                    "headline-h1-mobile": ["Manrope"],
+                    "display-lg": ["Manrope"],
+                    "label-caps": ["JetBrains Mono"],
+                    "data-mono": ["JetBrains Mono"],
+                    "headline-h2": ["Manrope"],
+                    "headline-h1": ["Manrope"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-h1-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "data-mono": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-h2": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-h1": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .dot-pattern {
+            background-image: radial-gradient(circle at 1px 1px, #e0e3e5 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar Shared Component -->
+<header class="bg-surface-container-lowest border-b border-outline-variant shadow-sm docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-7xl mx-auto h-[72px]">
+<!-- Brand -->
+<div class="font-headline-h2 text-headline-h2 font-bold text-primary">
+                SKYTECH ELECTRICALS
+            </div>
+<!-- Navigation Links (Hidden on mobile for brevity in this single-page response, assuming desktop view primarily per instructions) -->
+<nav class="hidden md:flex gap-gutter items-center h-full">
+<a class="text-on-surface-variant hover:text-secondary transition-all font-body-md text-body-md h-full flex items-center px-xs border-b-2 border-transparent" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all font-body-md text-body-md h-full flex items-center px-xs border-b-2 border-transparent" href="#">About</a>
+<!-- ACTIVE TAB -->
+<a class="text-secondary font-semibold border-b-2 border-secondary font-body-md text-body-md h-full flex items-center px-xs transition-all duration-200 active:scale-95" href="#">Products</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all font-body-md text-body-md h-full flex items-center px-xs border-b-2 border-transparent" href="#">Services</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all font-body-md text-body-md h-full flex items-center px-xs border-b-2 border-transparent" href="#">Industries</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all font-body-md text-body-md h-full flex items-center px-xs border-b-2 border-transparent" href="#">Projects</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="hidden md:flex items-center gap-sm">
+<a class="text-on-surface-variant hover:text-secondary transition-all font-body-md text-body-md" href="#">Blog</a>
+<button class="bg-primary-container text-on-primary border border-primary-container px-sm py-xs rounded hover:bg-on-primary-fixed-variant transition-all font-body-md font-semibold text-body-md flex items-center gap-xs">
+                    Get a Quote
+                </button>
+<button class="text-on-surface-variant hover:text-secondary transition-all flex items-center">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col">
+<!-- Hero / Catalog Header -->
+<section class="bg-surface-container-lowest border-b border-outline-variant relative overflow-hidden dot-pattern py-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop relative z-10 flex flex-col md:flex-row items-end justify-between gap-md">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg text-primary mb-sm">Industrial Power Solutions</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Explore our comprehensive catalog of high-performance UPS systems, heavy-duty battery banks, and precision servo stabilizers engineered for critical infrastructure.</p>
+</div>
+<!-- Search Box -->
+<div class="w-full md:w-96 relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full bg-surface border border-outline-variant rounded-lg pl-xl pr-sm py-xs font-body-md text-body-md text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all placeholder:text-outline shadow-sm" placeholder="Search catalog, models, specs..." type="text"/>
+</div>
+</div>
+</section>
+<!-- Catalog Layout Container -->
+<section class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-lg flex flex-col md:flex-row gap-gutter w-full">
+<!-- Sidebar Filter -->
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="sticky top-24 bg-surface-container-lowest border border-outline-variant rounded-lg p-sm shadow-sm">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant mb-md border-b border-outline-variant pb-xs">FILTER CATEGORIES</h3>
+<!-- Filter Group 1 -->
+<div class="mb-sm">
+<div class="font-headline-h2 text-[16px] font-semibold text-primary mb-xs flex justify-between items-center cursor-pointer">
+                            UPS SYSTEMS
+                            <span class="material-symbols-outlined text-outline text-[18px]">expand_less</span>
+</div>
+<ul class="space-y-xs ml-xs border-l-2 border-surface-variant pl-sm">
+<li>
+<label class="flex items-center gap-xs cursor-pointer group">
+<input checked="" class="rounded border-outline-variant text-secondary focus:ring-secondary" type="checkbox"/>
+<span class="font-body-md text-data-mono text-on-surface group-hover:text-secondary transition-colors">3-Phase Industrial</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-xs cursor-pointer group">
+<input class="rounded border-outline-variant text-secondary focus:ring-secondary" type="checkbox"/>
+<span class="font-body-md text-data-mono text-on-surface group-hover:text-secondary transition-colors">1-Phase Commercial</span>
+</label>
+</li>
+<li>
+<label class="flex items-center gap-xs cursor-pointer group">
+<input class="rounded border-outline-variant text-secondary focus:ring-secondary" type="checkbox"/>
+<span class="font-body-md text-data-mono text-on-surface group-hover:text-secondary transition-colors">Elevator / Lift</span>
+</label>
+</li>
+</ul>
+</div>
+<!-- Filter Group 2 -->
+<div class="mb-sm">
+<div class="font-headline-h2 text-[16px] font-semibold text-primary mb-xs flex justify-between items-center cursor-pointer">
+                            BATTERIES
+                            <span class="material-symbols-outlined text-outline text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Filter Group 3 -->
+<div class="mb-sm">
+<div class="font-headline-h2 text-[16px] font-semibold text-primary mb-xs flex justify-between items-center cursor-pointer">
+                            STABILIZERS
+                            <span class="material-symbols-outlined text-outline text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-1">
+<div class="flex justify-between items-center mb-sm">
+<span class="font-data-mono text-data-mono text-on-surface-variant">Showing 1-6 of 42 equipment models</span>
+<div class="flex gap-xs items-center">
+<span class="font-label-caps text-label-caps text-outline">SORT BY</span>
+<select class="bg-surface-container-lowest border border-outline-variant rounded py-xs pl-sm pr-lg font-data-mono text-[13px] text-on-surface focus:border-secondary outline-none">
+<option>Relevance</option>
+<option>Capacity: High to Low</option>
+<option>Capacity: Low to High</option>
+</select>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(13,28,50,0.08)] hover:border-secondary transition-all relative flex flex-col">
+<div class="absolute top-0 left-0 w-full h-[2px] bg-secondary opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
+<div class="relative h-48 bg-surface-container-low border-b border-outline-variant p-sm flex items-center justify-center">
+<div class="absolute top-sm left-sm bg-surface-container-lowest border border-outline-variant rounded px-xs py-[2px] font-label-caps text-[10px] text-primary flex items-center gap-[4px] shadow-sm">
+<div class="w-[6px] h-[6px] rounded-full bg-secondary"></div> 3-PHASE
+                            </div>
+<img class="object-cover h-full w-full opacity-90 mix-blend-multiply" data-alt="A sleek, massive industrial 3-phase UPS cabinet in a pristine, bright server room environment. The heavy-duty steel enclosure is painted in a professional corporate light gray with deep navy blue ventilation grilles. Bright, even lighting highlights the precise engineering and technical interface panel on the front. The overall aesthetic is modern, clean, and highly reliable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuT8DHSyCB8zE4zfp9sh7wEy5hGbMXBOk3DiwcUoYxaZGCnJRQcBXtOwnEGLImcq_IwuxbWsGz7Bg1jhXJrdQrXaJZw71ezJ817L8onTLTTrWyA7ZqshnpCH8xsaDO87Smf_GytEZSWIx6yKyDSwJvY_SsYGV61myxXWCUqu6I_4nIOy9LtzmZXrN5u3rCEW-zIzjyY9PakSig_-b_KfVmD4zYNaGzPCopS_ZUAkkOG4CC3tt_GvKG"/>
+</div>
+<div class="p-sm flex flex-col flex-1">
+<h4 class="font-headline-h2 text-[18px] font-bold text-primary mb-[4px]">Titanium X-Series 120kVA</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant mb-sm line-clamp-2">High-efficiency double conversion online UPS designed for large-scale data centers and continuous industrial automation lines.</p>
+<div class="mt-auto pt-sm border-t border-outline-variant flex justify-between items-center">
+<span class="font-data-mono text-[12px] text-secondary font-medium">Data Center App.</span>
+<button class="text-secondary font-body-md text-[14px] font-semibold hover:text-secondary-container transition-colors flex items-center gap-[4px]">
+                                    View Details <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(13,28,50,0.08)] hover:border-secondary transition-all relative flex flex-col">
+<div class="absolute top-0 left-0 w-full h-[2px] bg-secondary opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
+<div class="relative h-48 bg-surface-container-low border-b border-outline-variant p-sm flex items-center justify-center">
+<div class="absolute top-sm left-sm bg-surface-container-lowest border border-outline-variant rounded px-xs py-[2px] font-label-caps text-[10px] text-primary flex items-center gap-[4px] shadow-sm">
+<div class="w-[6px] h-[6px] rounded-full bg-secondary"></div> 3-PHASE
+                            </div>
+<img class="object-cover h-full w-full opacity-90 mix-blend-multiply" data-alt="A robust industrial 3-phase UPS system positioned in a clean, modern manufacturing facility setting. The unit features a matte light-gray finish with precision-cut ventilation slots and a digital display screen glowing with technical data. The lighting is crisp and cool white, casting subtle, realistic shadows that emphasize structural integrity and premium build quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmuoQFRMGyV7Dt1BDs1uUfsmKh89Vvbgdblxxr0ozJ4tu-U6afrsUDu6vQmOqRh_H8XNuT-ieWgxHti4EQVGjAD6f8aGl3L_KR_jl42Fpy2gy3OwoNOqYhs86DNNLuOhYotcnTfMYunvlutyFfvJ2sGK6bLR2Hd9XPRG3SAo1nT3y55RiBHPOFEv69yjMjRqEMkAs2i-kep2mt5JFcX2nOOH2sedHUjGreBYORELgsHukUm1RcGXdq"/>
+</div>
+<div class="p-sm flex flex-col flex-1">
+<h4 class="font-headline-h2 text-[18px] font-bold text-primary mb-[4px]">Titanium X-Series 80kVA</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant mb-sm line-clamp-2">Robust 3-phase power protection tailored for medical imaging equipment and mid-sized manufacturing floors.</p>
+<div class="mt-auto pt-sm border-t border-outline-variant flex justify-between items-center">
+<span class="font-data-mono text-[12px] text-secondary font-medium">Healthcare App.</span>
+<button class="text-secondary font-body-md text-[14px] font-semibold hover:text-secondary-container transition-colors flex items-center gap-[4px]">
+                                    View Details <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden group hover:shadow-[0_4px_12px_rgba(13,28,50,0.08)] hover:border-secondary transition-all relative flex flex-col">
+<div class="absolute top-0 left-0 w-full h-[2px] bg-secondary opacity-0 group-hover:opacity-100 transition-opacity z-10"></div>
+<div class="relative h-48 bg-surface-container-low border-b border-outline-variant p-sm flex items-center justify-center">
+<div class="absolute top-sm left-sm bg-surface-container-lowest border border-outline-variant rounded px-xs py-[2px] font-label-caps text-[10px] text-primary flex items-center gap-[4px] shadow-sm">
+<div class="w-[6px] h-[6px] rounded-full bg-outline"></div> 1-PHASE
+                            </div>
+<img class="object-cover h-full w-full opacity-90 mix-blend-multiply" data-alt="A compact, high-density 1-phase commercial UPS unit designed for server racks, sitting on a pristine white technical workstation table. The device has a sleek deep-navy metallic housing with vibrant electric blue LED status indicators. The environment is a brightly lit, minimalist IT room. The image conveys precision, technical edge, and reliable corporate design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVD0_Kyc0NvHrPBLCY5o0ZzOd7R8WdMXhSL_zsbl73TUVLK_NgXvDfDa_S0_Rj3VtuQ1ELyh784yIL_gUGVZsfYf0_dZonjadd_IAuLg-lloM0RdFBBC9oVe3B35sDYXEKMsMsc-P66qsJtYkNHCMsoxEsDVIHt_YBK0YONgUR2c2bl1IY9WtE2zpu6LurQq1OfrDuUzTL-CYYaK14ES_zlIKGAaGZiLX1K2VtBR7WfIUQFMnDRsFe"/>
+</div>
+<div class="p-sm flex flex-col flex-1">
+<h4 class="font-headline-h2 text-[18px] font-bold text-primary mb-[4px]">Aero Rackmount 10kVA</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant mb-sm line-clamp-2">High-density 1-phase UPS designed for seamless integration into standard IT server racks and network closets.</p>
+<div class="mt-auto pt-sm border-t border-outline-variant flex justify-between items-center">
+<span class="font-data-mono text-[12px] text-secondary font-medium">IT Infrastructure</span>
+<button class="text-secondary font-body-md text-[14px] font-semibold hover:text-secondary-container transition-colors flex items-center gap-[4px]">
+                                    View Details <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-primary-container w-full py-lg grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto border-t border-secondary mt-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-sm">
+<div class="font-headline-h1 text-headline-h1 text-white">SKYTECH ELECTRICALS</div>
+<p class="text-on-primary-container font-body-md text-[14px]">© 2024 SKYTECH ELECTRICALS. All rights reserved.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex justify-end gap-md items-end">
+<a class="text-on-primary-container font-body-md text-body-md opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-primary-container font-body-md text-body-md opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Terms of Service</a>
+<a class="text-on-primary-container font-body-md text-body-md opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">GSTIN Details</a>
+<a class="text-on-primary-container font-body-md text-body-md opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">PAN Info</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lead Details - SkyTech CRM</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#001f27",
+                      "surface-dim": "#d8dadc",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-error-container": "#93000a",
+                      "on-tertiary-fixed": "#001f27",
+                      "surface": "#f7f9fb",
+                      "tertiary": "#000000",
+                      "on-secondary-fixed": "#001849",
+                      "on-background": "#191c1e",
+                      "on-primary-fixed": "#0d1c32",
+                      "on-secondary-container": "#f9f7ff",
+                      "on-surface": "#191c1e",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#76849f",
+                      "on-primary-fixed-variant": "#39475f",
+                      "surface-container": "#eceef0",
+                      "surface-container-high": "#e6e8ea",
+                      "primary-fixed-dim": "#b9c7e4",
+                      "surface-variant": "#e0e3e5",
+                      "tertiary-fixed": "#b4ebff",
+                      "primary-container": "#0d1c32",
+                      "tertiary-fixed-dim": "#3cd7ff",
+                      "outline-variant": "#c5c6cd",
+                      "surface-tint": "#515f78",
+                      "secondary": "#0050cc",
+                      "secondary-container": "#0266ff",
+                      "on-tertiary-fixed-variant": "#004e5f",
+                      "on-secondary-fixed-variant": "#003fa4",
+                      "on-error": "#ffffff",
+                      "surface-container-low": "#f2f4f6",
+                      "primary-fixed": "#d6e3ff",
+                      "primary": "#000000",
+                      "inverse-on-surface": "#eff1f3",
+                      "surface-bright": "#f7f9fb",
+                      "on-tertiary-container": "#0090ae",
+                      "error-container": "#ffdad6",
+                      "background": "#f7f9fb",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed-dim": "#b3c5ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface-variant": "#44474d",
+                      "inverse-primary": "#b9c7e4",
+                      "inverse-surface": "#2d3133",
+                      "outline": "#75777e",
+                      "secondary-fixed": "#dae1ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "16px",
+                      "base": "4px",
+                      "lg": "40px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "64px",
+                      "xl": "80px",
+                      "xs": "8px",
+                      "md": "24px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-h2": [
+                              "Manrope"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-h1-mobile": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "data-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-h1": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-h2": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-h1-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "data-mono": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-h1": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+          .bg-grid {
+              background-size: 24px 24px;
+              background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+                                linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+          }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex">
+<!-- SideNavBar (Shared Component) -->
+<nav class="hidden md:flex fixed left-0 top-0 h-screen z-50 flex-col py-lg bg-primary-container dark:bg-primary-container docked left-0 h-full w-64 shadow-md bg-primary-container">
+<div class="px-md mb-xl">
+<h1 class="font-headline-h2 text-headline-h2 text-on-primary dark:text-on-primary">SKYTECH</h1>
+<p class="font-label-caps text-label-caps text-on-primary-container mt-xs">Industrial Portal</p>
+</div>
+<div class="flex-1 flex flex-col gap-xs px-sm">
+<!-- Dashboard -->
+<a class="flex items-center gap-sm bg-secondary dark:bg-secondary-container text-on-secondary dark:text-on-secondary-container rounded-lg px-md py-sm transition-transform duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-caps text-label-caps">Dashboard</span>
+</a>
+<!-- Active AMC -->
+<a class="flex items-center gap-sm text-on-primary-container dark:text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 dark:hover:bg-secondary-container/50 hover:opacity-100 transition-transform duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="font-label-caps text-label-caps">Active AMC</span>
+</a>
+<!-- Open Quotes -->
+<a class="flex items-center gap-sm text-on-primary-container dark:text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 dark:hover:bg-secondary-container/50 hover:opacity-100 transition-transform duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="request_quote">request_quote</span>
+<span class="font-label-caps text-label-caps">Open Quotes</span>
+</a>
+<!-- Service Requests -->
+<a class="flex items-center gap-sm text-on-primary-container dark:text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 dark:hover:bg-secondary-container/50 hover:opacity-100 transition-transform duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="engineering">engineering</span>
+<span class="font-label-caps text-label-caps">Service Requests</span>
+</a>
+<!-- Inventory -->
+<a class="flex items-center gap-sm text-on-primary-container dark:text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 dark:hover:bg-secondary-container/50 hover:opacity-100 transition-transform duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-label-caps text-label-caps">Inventory</span>
+</a>
+<!-- Analytics -->
+<a class="flex items-center gap-sm text-on-primary-container dark:text-on-primary-container px-md py-sm opacity-70 hover:bg-secondary/10 dark:hover:bg-secondary-container/50 hover:opacity-100 transition-transform duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-label-caps text-label-caps">Analytics</span>
+</a>
+</div>
+<div class="px-md mt-auto pt-lg border-t border-on-primary-container/20">
+<button class="w-full bg-secondary text-on-secondary font-body-md font-semibold py-sm rounded mb-sm hover:bg-secondary-container transition-colors">
+                New Service Request
+            </button>
+<div class="flex flex-col gap-xs mt-sm">
+<a class="flex items-center gap-sm text-on-primary-container dark:text-on-primary-container px-xs py-sm opacity-70 hover:opacity-100" href="#">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+<span class="font-label-caps text-label-caps">Support</span>
+</a>
+<a class="flex items-center gap-sm text-on-primary-container dark:text-on-primary-container px-xs py-sm opacity-70 hover:opacity-100" href="#">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+<span class="font-label-caps text-label-caps">Logout</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- TopNavBar (Shared Component) - Mobile Only -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile w-full h-16 fixed top-0 left-0 z-40 bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline flat no shadows">
+<span class="font-headline-h2 text-headline-h2 text-primary dark:text-primary-fixed">SKYTECH ELECTRICALS</span>
+<div class="flex items-center gap-sm">
+<button class="text-on-surface-variant hover:text-secondary transition-colors"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 ml-0 md:ml-64 mt-16 md:mt-0 p-margin-mobile md:p-margin-desktop bg-grid bg-surface-container-low min-h-screen relative overflow-y-auto">
+<!-- Header Actions -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-lg gap-md">
+<div>
+<div class="flex items-center gap-sm mb-base">
+<span class="font-data-mono text-data-mono text-outline uppercase tracking-wider">LD-2024-8901</span>
+<span class="inline-flex items-center gap-base px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-data-mono text-xs font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                        Site Visit Pending
+                    </span>
+</div>
+<h1 class="font-headline-h1-mobile md:font-headline-h1 text-on-background">Acme Industrial Upgrade</h1>
+</div>
+<div class="flex gap-sm w-full md:w-auto">
+<button class="flex-1 md:flex-none border border-secondary text-secondary font-body-md font-semibold px-md py-sm rounded hover:bg-secondary/5 transition-colors">
+                    Change Status
+                </button>
+<button class="flex-1 md:flex-none border border-secondary text-secondary font-body-md font-semibold px-md py-sm rounded hover:bg-secondary/5 transition-colors">
+                    Assign Engineer
+                </button>
+<button class="flex-1 md:flex-none bg-primary text-on-primary font-body-md font-semibold px-md py-sm rounded hover:bg-primary-container transition-colors shadow-md">
+                    Create Quotation
+                </button>
+</div>
+</div>
+<!-- Split Pane Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Pane: Details (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-md">
+<!-- Contact & Company Card -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-[2px] bg-secondary-container"></div>
+<h2 class="font-headline-h2 text-headline-h2 text-on-background mb-md">Entity Details</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<!-- Company -->
+<div>
+<h3 class="font-label-caps text-label-caps text-outline mb-sm uppercase">Company</h3>
+<p class="font-body-lg text-on-background font-semibold mb-base">Acme Manufacturing Corp.</p>
+<div class="flex items-center gap-base text-on-surface-variant font-data-mono text-data-mono mb-2">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+<span>TIN: 89-44521-X</span>
+</div>
+<div class="flex items-start gap-base text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-[18px] mt-1">location_on</span>
+<span>4500 Industrial Pkwy,<br/>Sector 4, TX 78001</span>
+</div>
+</div>
+<!-- Primary Contact -->
+<div>
+<h3 class="font-label-caps text-label-caps text-outline mb-sm uppercase">Primary Contact</h3>
+<div class="flex items-center gap-sm mb-sm">
+<img class="w-12 h-12 rounded-full object-cover border border-outline-variant" data-alt="A professional headshot of a middle-aged male executive in a modern industrial setting. Bright, corporate lighting, minimal background focus. Business formal attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2UMtn5HODorqWkKoPqr27L8xtnrNqfSkwyheLcsUoT0uDCTQ3M4x_Lk6HXrsNJVMGwBzTrQdupnGoprHkui6DBQfk6BfdxRpAVHRXpQkJEBFr2PmjW35_mMCItT0k9OgDT35PNHyPazIiMgBLuzLYf3mHdfwz5s-JtfGJYdhd6Lu-MvW6MRiL_OF73rxb7Mtw2eIwmjWFbtOWMFYyC9xJWgxCJsALJMBIUsFpX1JizV2dv87w-7E4"/>
+<div>
+<p class="font-body-md text-on-background font-semibold">Robert Chen</p>
+<p class="font-data-mono text-data-mono text-on-surface-variant">Facilities Director</p>
+</div>
+</div>
+<div class="flex items-center gap-base text-on-surface-variant font-data-mono text-data-mono mb-2">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<a class="hover:text-secondary" href="tel:+15550198">+1 (555) 019-8372</a>
+</div>
+<div class="flex items-center gap-base text-on-surface-variant font-data-mono text-data-mono">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<a class="hover:text-secondary" href="mailto:rchen@acmemfg.com">rchen@acmemfg.com</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Requirement Overview -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-sm">
+<h2 class="font-headline-h2 text-headline-h2 text-on-background mb-md">Requirement Overview</h2>
+<p class="font-body-md text-on-surface-variant mb-md max-w-3xl">
+                        Client requires a complete overhaul of the main distribution panel in Sector B and the installation of three new heavy-duty capacitor banks to improve power factor. Existing systems are legacy (15+ years old) and experiencing frequent thermal tripping during peak load hours.
+                    </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-sm p-sm bg-surface-container rounded border border-outline-variant/50">
+<div>
+<p class="font-label-caps text-label-caps text-outline uppercase mb-1">Est. Value</p>
+<p class="font-data-mono text-body-lg font-semibold text-primary">$45,000</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-outline uppercase mb-1">Lead Source</p>
+<p class="font-body-md font-semibold text-on-background">Trade Show</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-outline uppercase mb-1">Priority</p>
+<p class="font-body-md font-semibold text-error">High (Thermal Issues)</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-outline uppercase mb-1">Target Date</p>
+<p class="font-data-mono text-body-md font-semibold text-on-background">Q3 2024</p>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Pane: Activity Timeline (4 cols) -->
+<div class="lg:col-span-4 flex flex-col h-full">
+<section class="bg-surface-container-lowest border border-outline-variant rounded-lg shadow-sm flex flex-col h-full sticky top-lg">
+<div class="p-md border-b border-outline-variant">
+<h2 class="font-headline-h2 text-headline-h2 text-on-background">Activity Timeline</h2>
+</div>
+<div class="p-md flex-1 overflow-y-auto">
+<div class="relative border-l border-outline-variant ml-3 space-y-lg pb-4">
+<!-- Timeline Item 1 -->
+<div class="relative pl-sm">
+<span class="absolute -left-[21px] top-1 w-10 h-10 rounded-full bg-surface-container-lowest border border-outline-variant flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">assignment_add</span>
+</span>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-baseline">
+<p class="font-body-md font-semibold text-on-background">Enquiry Received</p>
+<span class="font-data-mono text-[12px] text-outline">Oct 12, 09:41 AM</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm">Lead generated from Austin Industrial Expo. Initial requirements logged.</p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative pl-sm">
+<span class="absolute -left-[21px] top-1 w-10 h-10 rounded-full bg-surface-container-lowest border border-outline-variant flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</span>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-baseline">
+<p class="font-body-md font-semibold text-on-background">Initial Consultation Call</p>
+<span class="font-data-mono text-[12px] text-outline">Oct 14, 11:30 AM</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm">Discussed thermal tripping issues. Suggested site visit for structural assessment.</p>
+<div class="mt-2 p-2 bg-surface-container rounded text-sm font-data-mono">
+                                        Rep: Sarah Jenkins
+                                    </div>
+</div>
+</div>
+<!-- Timeline Item 3 (Current/Active) -->
+<div class="relative pl-sm">
+<span class="absolute -left-[21px] top-1 w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</span>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-baseline">
+<p class="font-body-md font-semibold text-primary">Site Visit Scheduled</p>
+<span class="font-data-mono text-[12px] text-outline">Pending</span>
+</div>
+<p class="font-body-md text-on-surface-variant text-sm">Requires Sr. Engineer assignment for Sector B assessment.</p>
+<button class="mt-2 self-start text-secondary font-label-caps uppercase text-xs hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">person_add</span> Assign Now
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-md border-t border-outline-variant bg-surface-container-low">
+<div class="flex gap-sm">
+<input class="flex-1 border border-outline-variant rounded bg-surface-container-lowest px-sm py-2 font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary outline-none" placeholder="Add a note..." type="text"/>
+<button class="bg-primary-container text-on-primary-container px-sm rounded hover:bg-primary-fixed transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+</body></html>

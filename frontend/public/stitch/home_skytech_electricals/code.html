@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>SKYTECH ELECTRICALS | Reliable Power Solutions</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet"
+    />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet"
+    />
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#3cd7ff",
+                        "secondary": "#0050cc",
+                        "surface-bright": "#f7f9fb",
+                        "outline": "#75777e",
+                        "tertiary-fixed": "#b4ebff",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "surface-dim": "#d8dadc",
+                        "secondary-container": "#0266ff",
+                        "primary-fixed": "#d6e3ff",
+                        "on-surface-variant": "#44474d",
+                        "background": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-variant": "#e0e3e5",
+                        "outline-variant": "#c5c6cd",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-tertiary-container": "#0090ae",
+                        "primary-container": "#0d1c32",
+                        "on-background": "#191c1e",
+                        "secondary-fixed": "#dae1ff",
+                        "on-primary-fixed-variant": "#39475f",
+                        "on-tertiary-fixed": "#001f27",
+                        "on-tertiary-fixed-variant": "#004e5f",
+                        "on-secondary-fixed": "#001849",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "on-secondary-container": "#f9f7ff",
+                        "tertiary-container": "#001f27",
+                        "on-primary-container": "#76849f",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#b9c7e4",
+                        "tertiary": "#000000",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#515f78",
+                        "on-primary": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "primary": "#000000",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#003fa4"
+                    },
+
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+
+                    spacing: {
+                        "md": "24px",
+                        "gutter": "24px",
+                        "sm": "16px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "xl": "80px",
+                        "lg": "40px",
+                        "base": "4px",
+                        "xs": "8px"
+                    },
+
+                    fontFamily: {
+                        "headline-h1-mobile": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "label-caps": ["JetBrains Mono"],
+                        "data-mono": ["JetBrains Mono"],
+                        "headline-h2": ["Manrope"],
+                        "headline-h1": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+
+                    fontSize: {
+                        "headline-h1-mobile": [
+                            "28px",
+                            {
+                                lineHeight: "1.2",
+                                fontWeight: "700"
+                            }
+                        ],
+
+                        "display-lg": [
+                            "48px",
+                            {
+                                lineHeight: "1.1",
+                                letterSpacing: "-0.02em",
+                                fontWeight: "800"
+                            }
+                        ],
+
+                        "label-caps": [
+                            "12px",
+                            {
+                                lineHeight: "1.0",
+                                letterSpacing: "0.1em",
+                                fontWeight: "500"
+                            }
+                        ],
+
+                        "data-mono": [
+                            "14px",
+                            {
+                                lineHeight: "1.4",
+                                fontWeight: "400"
+                            }
+                        ],
+
+                        "headline-h2": [
+                            "24px",
+                            {
+                                lineHeight: "1.3",
+                                fontWeight: "600"
+                            }
+                        ],
+
+                        "headline-h1": [
+                            "36px",
+                            {
+                                lineHeight: "1.2",
+                                fontWeight: "700"
+                            }
+                        ],
+
+                        "body-md": [
+                            "16px",
+                            {
+                                lineHeight: "1.5",
+                                fontWeight: "400"
+                            }
+                        ],
+
+                        "body-lg": [
+                            "18px",
+                            {
+                                lineHeight: "1.6",
+                                fontWeight: "400"
+                            }
+                        ]
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        .circuit-pattern {
+            background-image:
+                radial-gradient(
+                    var(--tw-colors-outline-variant) 1px,
+                    transparent 1px
+                );
+            background-size: 24px 24px;
+        }
+
+        /*
+         * =========================================================
+         * SKYTECH - STICKY NAVIGATION
+         * =========================================================
+         */
+
+        header {
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 9999 !important;
+            width: 100% !important;
+        }
+
+        header nav {
+            position: relative;
+            z-index: 10000;
+        }
+
+        header,
+        header * {
+            box-sizing: border-box;
+        }
+
+        .skytech-nav-link {
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .skytech-nav-link:hover {
+            color: #0050cc !important;
+        }
+
+        .skytech-portal-login {
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .skytech-portal-login:hover {
+            color: #0050cc !important;
+        }
+
+        .skytech-whatsapp {
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .skytech-whatsapp:hover {
+            transform: scale(1.08);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+        }
+
+        @media (max-width: 1200px) {
+            .skytech-desktop-header {
+                gap: 16px !important;
+            }
+
+            .skytech-main-nav {
+                gap: 18px !important;
+            }
+
+            .skytech-main-nav a {
+                font-size: 14px !important;
+            }
+
+            .skytech-right-nav {
+                gap: 12px !important;
+            }
+
+            .skytech-right-nav a,
+            .skytech-right-nav button {
+                font-size: 14px !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-background font-body-md antialiased overflow-x-hidden"
+>
+
+<!-- ========================================================= -->
+<!-- HEADER -->
+<!-- ========================================================= -->
+
+<header
+    class="bg-surface-container-lowest dark:bg-surface-container-highest docked full-width top-0 sticky border-b border-outline-variant dark:border-outline shadow-sm z-50 transition-all duration-200"
+>
+    <div
+        class="skytech-desktop-header flex justify-between items-center w-full px-margin-desktop py-base max-w-7xl mx-auto z-50"
+    >
+
+        <!-- Logo -->
+        <div class="flex items-center gap-4">
+
+            <a
+                class="font-headline-h2 text-headline-h2 font-bold text-primary dark:text-on-primary-fixed uppercase tracking-tighter"
+                href="#"
+                onclick="event.preventDefault(); skytechNavigate('Home');"
+            >
+                SKYTECH ELECTRICALS
+            </a>
+
+        </div>
+
+        <!-- Main Navigation -->
+        <nav
+            class="skytech-main-nav hidden md:flex items-center gap-6"
+        >
+
+            <a
+                class="skytech-nav-link text-secondary dark:text-secondary-fixed-dim font-semibold border-b-2 border-secondary font-body-md text-body-md"
+                href="#"
+                onclick="event.preventDefault(); skytechNavigate('Home');"
+            >
+                Home
+            </a>
+
+            <a
+                class="skytech-nav-link text-on-surface-variant dark:text-on-surface font-body-md text-body-md"
+                href="#"
+                onclick="event.preventDefault(); skytechNavigate('About');"
+            >
+                About
+            </a>
+
+            <a
+                class="skytech-nav-link text-on-surface-variant dark:text-on-surface font-body-md text-body-md"
+                href="#"
+                onclick="event.preventDefault(); skytechNavigate('Products');"
+            >
+                Products
+            </a>
+
+            <a
+                class="skytech-nav-link text-on-surface-variant dark:text-on-surface font-body-md text-body-md"
+                href="#"
+                onclick="event.preventDefault(); skytechNavigate('Services');"
+            >
+                Services
+            </a>
+
+            <a
+                class="skytech-nav-link text-on-surface-variant dark:text-on-surface font-body-md text-body-md"
+                href="#"
+                onclick="event.preventDefault(); skytechNavigate('Industries');"
+            >
+                Industries
+            </a>
+
+            <a
+                class="skytech-nav-link text-on-surface-variant dark:text-on-surface font-body-md text-body-md"
+                href="#"
+                onclick="event.preventDefault(); skytechNavigate('Projects');"
+            >
+                Projects
+            </a>
+
+        </nav>
+
+        <!-- Right Navigation -->
+        <div
+            class="skytech-right-nav hidden md:flex items-center gap-4"
+        >
+
+            <!-- Blog -->
+            <a
+                class="skytech-nav-link text-on-surface-variant hover:text-secondary font-body-md text-body-md"
+                href="#"
+                onclick="event.preventDefault(); skytechNavigate('Blog');"
+            >
+                Blog
+            </a>
+
+            <!-- Portal Login -->
+            <a
+                class="skytech-portal-login text-on-surface-variant hover:text-secondary font-body-md text-body-md font-semibold"
+                href="#"
+                onclick="event.preventDefault(); skytechNavigate('Portal Login');"
+            >
+                Portal Login
+            </a>
+
+            <!-- Get a Quote -->
+            <button
+                type="button"
+                class="bg-primary text-on-primary px-6 py-2 rounded font-body-md text-body-md font-semibold hover:bg-on-primary-fixed-variant transition-colors"
+                onclick="skytechNavigate('Get a Quote');"
+            >
+                Get a Quote
+            </button>
+
+            <!-- Contact -->
+            <button
+                type="button"
+                class="text-on-surface-variant hover:text-secondary transition-colors flex items-center justify-center p-2 rounded-full hover:bg-surface-variant"
+                onclick="skytechNavigate('Contact');"
+                aria-label="Contact"
+                title="Contact"
+            >
+                <span
+                    class="material-symbols-outlined"
+                    data-icon="contact_support"
+                >
+                    contact_support
+                </span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+            id="skytech-mobile-menu-button"
+            class="md:hidden text-on-surface p-2"
+            type="button"
+            aria-label="Open menu"
+            onclick="openSkytechMobileMenu();"
+        >
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+
+    </div>
+</header>
+
+
+<!-- ========================================================= -->
+<!-- HERO SECTION -->
+<!-- ========================================================= -->
+
+<section
+    class="relative pt-xl pb-xl px-margin-desktop md:px-margin-desktop circuit-pattern overflow-hidden"
+>
+    <div
+        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center relative z-10"
+    >
+
+        <!-- Hero Content -->
+        <div class="flex flex-col gap-sm">
+
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 bg-primary-fixed rounded-full w-max mb-4"
+            >
+                <span
+                    class="w-2 h-2 rounded-full bg-secondary"
+                ></span>
+
+                <span
+                    class="font-label-caps text-label-caps text-on-primary-fixed"
+                >
+                    INDUSTRIAL POWER SOLUTIONS
+                </span>
+            </div>
+
+            <h1
+                class="font-display-lg text-display-lg text-primary max-w-2xl"
+            >
+                Reliable Power.<br/>
+
+                <span class="text-secondary">
+                    Uninterrupted Performance.
+                </span>
+            </h1>
+
+            <p
+                class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mt-4"
+            >
+                Complete UPS, Battery and Servo Stabilizer solutions
+                for businesses that cannot afford downtime.
+                Engineered for absolute structural integrity and
+                high-voltage energy management.
+            </p>
+
+            <div
+                class="flex flex-wrap items-center gap-4 mt-8"
+            >
+
+                <!-- Hero Get Quote -->
+                <button
+                    type="button"
+                    class="bg-secondary text-on-secondary px-8 py-3 rounded font-body-md text-body-md font-semibold hover:bg-secondary-container transition-colors shadow-sm shadow-primary/20"
+                    onclick="skytechNavigate('Get a Quote');"
+                >
+                    Get a Quote
+                </button>
+
+                <!-- Hero Talk to Expert -->
+                <button
+                    type="button"
+                    class="border border-outline bg-transparent text-primary px-8 py-3 rounded font-body-md text-body-md font-semibold hover:bg-surface-container-low transition-colors"
+                    onclick="skytechNavigate('Talk to an Expert');"
+                >
+                    Talk to an Expert
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hero Image -->
+        <div
+            class="relative h-[500px] w-full rounded-xl overflow-hidden border border-outline-variant shadow-lg"
+        >
+
+            <div
+                class="absolute inset-0 bg-primary/5 z-10"
+            ></div>
+
+            <img
+    class="object-cover w-full h-full"
+    src="/images/screen1.png"
+    alt="SKYTECH ELECTRICALS Industrial UPS System"
+    loading="eager"
+/>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- TRUST STRIP -->
+<!-- ========================================================= -->
+
+<section
+    class="bg-surface-container-highest border-y border-outline-variant py-8"
+>
+    <div
+        class="max-w-7xl mx-auto px-margin-desktop"
+    >
+
+        <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-8"
+        >
+
+            <div
+                class="flex flex-col items-center justify-center text-center gap-2"
+            >
+                <span
+                    class="material-symbols-outlined text-secondary text-3xl"
+                    style="font-variation-settings: 'FILL' 1;"
+                >
+                    verified
+                </span>
+
+                <span
+                    class="font-body-md text-body-md font-semibold text-primary"
+                >
+                    10+ Years Experience
+                </span>
+            </div>
+
+
+            <div
+                class="flex flex-col items-center justify-center text-center gap-2"
+            >
+                <span
+                    class="material-symbols-outlined text-secondary text-3xl"
+                    style="font-variation-settings: 'FILL' 1;"
+                >
+                    bolt
+                </span>
+
+                <span
+                    class="font-body-md text-body-md font-semibold text-primary"
+                >
+                    Complete Power Solutions
+                </span>
+            </div>
+
+
+            <div
+                class="flex flex-col items-center justify-center text-center gap-2"
+            >
+                <span
+                    class="material-symbols-outlined text-secondary text-3xl"
+                    style="font-variation-settings: 'FILL' 1;"
+                >
+                    support_agent
+                </span>
+
+                <span
+                    class="font-body-md text-body-md font-semibold text-primary"
+                >
+                    24/7 Service Support
+                </span>
+            </div>
+
+
+            <div
+                class="flex flex-col items-center justify-center text-center gap-2"
+            >
+                <span
+                    class="material-symbols-outlined text-secondary text-3xl"
+                    style="font-variation-settings: 'FILL' 1;"
+                >
+                    factory
+                </span>
+
+                <span
+                    class="font-body-md text-body-md font-semibold text-primary"
+                >
+                    Industrial Project Experience
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer
+    class="bg-primary-container dark:bg-surface-container-lowest w-full py-lg border-t border-secondary grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-7xl mx-auto"
+>
+
+    <!-- Company -->
+    <div
+        class="flex flex-col gap-4 col-span-1 md:col-span-2"
+    >
+
+        <a
+            class="font-headline-h1 text-headline-h1 text-white uppercase tracking-tighter font-bold"
+            href="#"
+            onclick="event.preventDefault(); skytechNavigate('Home');"
+        >
+            SKYTECH ELECTRICALS
+        </a>
+
+        <p
+            class="font-body-md text-body-md text-on-primary-container dark:text-on-surface opacity-80 max-w-md"
+        >
+            Powering industries with reliable,
+            uninterrupted solutions.
+            Engineered for excellence.
+        </p>
+
+        <p
+            class="font-label-caps text-label-caps text-on-primary-container dark:text-on-surface mt-auto"
+        >
+            © 2024 SKYTECH ELECTRICALS.
+            All rights reserved.
+        </p>
+
+    </div>
+
+
+    <!-- Legal -->
+    <div
+        class="flex flex-col gap-3 col-span-1"
+    >
+
+        <h4
+            class="font-label-caps text-label-caps text-white mb-2"
+        >
+            Legal
+        </h4>
+
+        <a
+            class="font-body-md text-body-md text-on-primary-container dark:text-on-surface opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors"
+            href="#"
+        >
+            Privacy Policy
+        </a>
+
+        <a
+            class="font-body-md text-body-md text-on-primary-container dark:text-on-surface opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors"
+            href="#"
+        >
+            Terms of Service
+        </a>
+
+    </div>
+
+
+    <!-- Company Info -->
+    <div
+        class="flex flex-col gap-3 col-span-1"
+    >
+
+        <h4
+            class="font-label-caps text-label-caps text-white mb-2"
+        >
+            Company Info
+        </h4>
+
+        <a
+            class="font-body-md text-body-md text-on-primary-container dark:text-on-surface opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors"
+            href="#"
+        >
+            GSTIN Details
+        </a>
+
+        <a
+            class="font-body-md text-body-md text-on-primary-container dark:text-on-surface opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors"
+            href="#"
+        >
+            PAN Info
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- ========================================================= -->
+<!-- WHATSAPP -->
+<!-- ========================================================= -->
+
+<a
+    class="skytech-whatsapp fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg z-50 flex items-center justify-center"
+    href="https://wa.me/918626021104?text=Hello%20SKYTECH%20ELECTRICALS%2C%20I%20am%20interested%20in%20your%20power%20solutions.%20Please%20provide%20more%20information."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with SKYTECH ELECTRICALS on WhatsApp"
+    title="Chat with us on WhatsApp"
+>
+
+    <svg
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 16 16"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+        ></path>
+    </svg>
+
+</a>
+
+
+<!-- ========================================================= -->
+<!-- MOBILE MENU -->
+<!-- ========================================================= -->
+
+<script>
+(function () {
+
+    if (window.__SKYTECH_HOME_SCRIPT__) {
+        return;
+    }
+
+    window.__SKYTECH_HOME_SCRIPT__ = true;
+
+
+    /*
+     * ---------------------------------------------------------
+     * React Router navigation bridge
+     * ---------------------------------------------------------
+     */
+
+    window.skytechNavigate = function (label) {
+
+        if (!label) {
+            return;
+        }
+
+        window.parent.postMessage(
+            {
+                source: "skytech-stitch",
+                type: "navigate",
+                label: label
+            },
+            window.location.origin
+        );
+    };
+
+
+    /*
+     * ---------------------------------------------------------
+     * Mobile menu
+     * ---------------------------------------------------------
+     */
+
+    window.openSkytechMobileMenu = function () {
+
+        var existing =
+            document.getElementById(
+                "skytech-stitch-mobile-menu"
+            );
+
+        if (existing) {
+            existing.remove();
+            return;
+        }
+
+
+        var menu =
+            document.createElement("div");
+
+        menu.id =
+            "skytech-stitch-mobile-menu";
+
+
+        menu.style.cssText = [
+            "position:fixed",
+            "inset:0",
+            "z-index:999999",
+            "background:#ffffff",
+            "font-family:Inter,Arial,sans-serif",
+            "overflow-y:auto"
+        ].join(";");
+
+
+        /*
+         * Header
+         */
+
+        var top =
+            document.createElement("div");
+
+        top.style.cssText = [
+            "display:flex",
+            "align-items:center",
+            "justify-content:space-between",
+            "padding:18px 20px",
+            "border-bottom:1px solid #e5e7eb"
+        ].join(";");
+
+
+        var title =
+            document.createElement("div");
+
+        title.textContent =
+            "SKYTECH ELECTRICALS";
+
+        title.style.cssText = [
+            "font-size:21px",
+            "font-weight:800",
+            "color:#000000"
+        ].join(";");
+
+
+        var close =
+            document.createElement("button");
+
+        close.type = "button";
+
+        close.textContent = "×";
+
+        close.setAttribute(
+            "aria-label",
+            "Close menu"
+        );
+
+        close.style.cssText = [
+            "border:0",
+            "background:transparent",
+            "font-size:32px",
+            "cursor:pointer",
+            "line-height:1"
+        ].join(";");
+
+
+        close.addEventListener(
+            "click",
+            function () {
+                menu.remove();
+            }
+        );
+
+
+        top.appendChild(title);
+        top.appendChild(close);
+
+        menu.appendChild(top);
+
+
+        /*
+         * Navigation
+         */
+
+        var routes = [
+
+            ["Home", "Home"],
+
+            ["About", "About"],
+
+            ["Products", "Products"],
+
+            ["Services", "Services"],
+
+            ["Industries", "Industries"],
+
+            ["Projects", "Projects"],
+
+            ["Knowledge Center", "Knowledge Center"],
+
+            ["Contact", "Contact"],
+
+            ["Get a Quote", "Get a Quote"],
+
+            ["Portal Login", "Portal Login"]
+
+        ];
+
+
+        var navigation =
+            document.createElement("nav");
+
+        navigation.style.cssText = [
+            "display:flex",
+            "flex-direction:column",
+            "padding:10px 20px 30px"
+        ].join(";");
+
+
+        routes.forEach(
+            function (item) {
+
+                var button =
+                    document.createElement("button");
+
+                button.type = "button";
+
+                button.textContent =
+                    item[0];
+
+                button.style.cssText = [
+                    "display:block",
+                    "width:100%",
+                    "padding:16px 8px",
+                    "border:0",
+                    "border-bottom:1px solid #e5e7eb",
+                    "background:transparent",
+                    "text-align:left",
+                    "font-family:Inter,Arial,sans-serif",
+                    "font-size:17px",
+                    "font-weight:600",
+                    "color:#333333",
+                    "cursor:pointer"
+                ].join(";");
+
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        skytechNavigate(
+                            item[1]
+                        );
+
+                        menu.remove();
+                    }
+                );
+
+
+                navigation.appendChild(
+                    button
+                );
+            }
+        );
+
+
+        /*
+         * WhatsApp in mobile menu
+         */
+
+        var whatsapp =
+            document.createElement("a");
+
+        whatsapp.href =
+            "https://wa.me/918626021104?text=Hello%20SKYTECH%20ELECTRICALS%2C%20I%20am%20interested%20in%20your%20power%20solutions.%20Please%20provide%20more%20information.";
+
+        whatsapp.target = "_blank";
+
+        whatsapp.rel =
+            "noopener noreferrer";
+
+        whatsapp.textContent =
+            "WhatsApp";
+
+        whatsapp.style.cssText = [
+            "display:block",
+            "margin-top:20px",
+            "padding:15px",
+            "background:#25D366",
+            "color:#ffffff",
+            "text-align:center",
+            "font-size:17px",
+            "font-weight:700",
+            "text-decoration:none",
+            "border-radius:4px"
+        ].join(";");
+
+
+        navigation.appendChild(
+            whatsapp
+        );
+
+
+        menu.appendChild(
+            navigation
+        );
+
+
+        document.body.appendChild(
+            menu
+        );
+
+    };
+
+})();
+</script>
+
+
+<!-- ========================================================= -->
+<!-- STITCH NAVIGATION BRIDGE -->
+<!-- ========================================================= -->
+
+<script>
+(function () {
+
+    if (window.__SKYTECH_STITCH_BRIDGE__) {
+        return;
+    }
+
+    window.__SKYTECH_STITCH_BRIDGE__ = true;
+
+
+    function normalize(value) {
+
+        return (value || "")
+            .replace(/\s+/g, " ")
+            .trim()
+            .toLowerCase();
+
+    }
+
+
+    function visibleLabel(element) {
+
+        if (!element) {
+            return "";
+        }
+
+
+        var clone =
+            element.cloneNode(true);
+
+
+        clone
+            .querySelectorAll(
+                ".material-symbols-outlined"
+            )
+            .forEach(
+                function (icon) {
+                    icon.remove();
+                }
+            );
+
+
+        return normalize(
+            clone.textContent ||
+            element.innerText ||
+            ""
+        );
+
+    }
+
+
+    function send(label) {
+
+        if (!label) {
+            return false;
+        }
+
+
+        window.parent.postMessage(
+            {
+                source: "skytech-stitch",
+                type: "navigate",
+                label: label
+            },
+            window.location.origin
+        );
+
+
+        return true;
+    }
+
+
+    function shouldHandle(
+        label,
+        element
+    ) {
+
+        var text =
+            normalize(label);
+
+
+        var navigationLabels = [
+
+            "home",
+
+            "about",
+
+            "products",
+
+            "services",
+
+            "industries",
+
+            "projects",
+
+            "project gallery",
+
+            "blog",
+
+            "knowledge center",
+
+            "get a quote",
+
+            "request a quote",
+
+            "talk to an expert",
+
+            "contact us",
+
+            "contact",
+
+            "contact engineering",
+
+            "schedule a consultation",
+
+            "request technical consultation",
+
+            "technical consultation",
+
+            "view case study",
+
+            "our projects",
+
+            "view all projects",
+
+            "view details",
+
+            "view detailed solution",
+
+            "request emergency",
+
+            "amc request",
+
+            "support",
+
+            "portal login",
+
+            "login",
+
+            "customer login",
+
+            "admin login",
+
+            "ups calculator",
+
+            "battery calculator",
+
+            "three phase ups",
+
+            "ai power assistant",
+
+            "dashboard",
+
+            "active amc",
+
+            "open quotes",
+
+            "service requests",
+
+            "lead management",
+
+            "leads",
+
+            "new service request",
+
+            "review renewal",
+
+            "dispatch team",
+
+            "recent enquiries",
+
+            "view all",
+
+            "equipment",
+
+            "my equipment",
+
+            "view equipment",
+
+            "service history",
+
+            "view service history",
+
+            "amc status",
+
+            "settings",
+
+            "request service",
+
+            "service request",
+
+            "logout"
+
+        ];
+
+
+        if (
+            navigationLabels.indexOf(text) === -1
+        ) {
+            return false;
+        }
+
+
+        /*
+         * Never hijack a real form control.
+         */
+
+        if (
+            element &&
+            element.closest &&
+            element.closest("form")
+        ) {
+            return false;
+        }
+
+
+        return true;
+
+    }
+
+
+    document.addEventListener(
+        "click",
+        function (event) {
+
+            var target =
+                event.target;
+
+
+            if (
+                !target ||
+                !target.closest
+            ) {
+                return;
+            }
+
+
+            var clickable =
+                target.closest(
+                    "a, button, [role='button']"
+                );
+
+
+            if (!clickable) {
+                return;
+            }
+
+
+            /*
+             * Do not intercept WhatsApp.
+             */
+
+            if (
+                clickable.classList &&
+                clickable.classList.contains(
+                    "skytech-whatsapp"
+                )
+            ) {
+                return;
+            }
+
+
+            if (
+                clickable.href &&
+                clickable.href.indexOf(
+                    "wa.me"
+                ) !== -1
+            ) {
+                return;
+            }
+
+
+            var label =
+                visibleLabel(
+                    clickable
+                );
+
+
+            /*
+             * Mobile hamburger
+             */
+
+            if (
+                label === "menu" ||
+                (
+                    clickable.querySelector &&
+                    clickable.querySelector(
+                        ".material-symbols-outlined"
+                    ) &&
+                    normalize(
+                        clickable.querySelector(
+                            ".material-symbols-outlined"
+                        ).textContent
+                    ) === "menu"
+                )
+            ) {
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                openSkytechMobileMenu();
+
+                return;
+            }
+
+
+            /*
+             * Only intercept known
+             * navigation actions.
+             */
+
+            if (
+                !shouldHandle(
+                    label,
+                    clickable
+                )
+            ) {
+                return;
+            }
+
+
+            event.preventDefault();
+            event.stopPropagation();
+
+            send(label);
+
+        },
+        true
+    );
+
+})();
+</script>
+
+
+</body>
+</html>

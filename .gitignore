@@ -1,0 +1,47 @@
+# Python
+backend/venv/
+__pycache__/
+*.py[cod]
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Playwright
+frontend/playwright-report/
+frontend/test-results/
+
+# Python tooling
+.pytest_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Security audit output
+audit.json
+
+# Large datasets / generated data
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+
+# Logs
+*.log
+
+# Build / temporary files
+*.tmp
+*.temp

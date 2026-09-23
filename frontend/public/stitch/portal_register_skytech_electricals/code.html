@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>SKYTECH Electricals - Customer Registration</title>
+
+  <!-- Material Symbols -->
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0"
+  />
+
+  <style>
+
+    /* =====================================================
+       RESET
+       ===================================================== */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      background: #f7f9fc;
+      color: #111827;
+    }
+
+    button,
+    input {
+      font-family: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    /* =====================================================
+       MATERIAL ICONS
+       ===================================================== */
+
+    .material-symbols-outlined {
+      font-family:
+        "Material Symbols Outlined";
+
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+
+      -webkit-font-feature-settings:
+        "liga";
+
+      -webkit-font-smoothing: antialiased;
+
+      font-variation-settings:
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+    }
+
+
+    /* =====================================================
+       PAGE
+       ===================================================== */
+
+    .page {
+      min-height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 40px 20px;
+
+      background:
+        linear-gradient(
+          180deg,
+          #f8fafc 0%,
+          #f1f5f9 100%
+        );
+    }
+
+
+    /* =====================================================
+       MAIN CONTAINER
+       ===================================================== */
+
+    .container {
+      width: 100%;
+      max-width: 460px;
+    }
+
+
+    /* =====================================================
+       BRAND
+       ===================================================== */
+
+    .brand {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .brand-logo {
+      width: 52px;
+      height: 52px;
+
+      margin: 0 auto 14px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #0f63d8;
+      color: #ffffff;
+
+      border-radius: 12px;
+
+      box-shadow:
+        0 8px 20px
+        rgba(15, 99, 216, 0.18);
+    }
+
+    .brand-logo .material-symbols-outlined {
+      font-size: 28px;
+    }
+
+    .brand-title {
+      margin: 0;
+
+      font-size: 27px;
+      line-height: 1.2;
+
+      font-weight: 800;
+
+      letter-spacing: -0.5px;
+
+      color: #111827;
+    }
+
+    .brand-subtitle {
+      margin: 7px 0 0;
+
+      font-size: 14px;
+
+      color: #64748b;
+    }
+
+
+    /* =====================================================
+       CARD
+       ===================================================== */
+
+    .card {
+      width: 100%;
+
+      background: #ffffff;
+
+      border: 1px solid #e2e8f0;
+
+      border-radius: 16px;
+
+      padding: 32px;
+
+      box-shadow:
+        0 15px 35px
+        rgba(15, 23, 42, 0.08);
+    }
+
+
+    /* =====================================================
+       CARD HEADER
+       ===================================================== */
+
+    .card-header {
+      margin-bottom: 26px;
+    }
+
+    .card-title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      margin-bottom: 10px;
+    }
+
+    .card-icon {
+      width: 42px;
+      height: 42px;
+
+      flex-shrink: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 10px;
+
+      background: #eff6ff;
+      color: #0f63d8;
+    }
+
+    .card-icon .material-symbols-outlined {
+      font-size: 23px;
+    }
+
+    .card-title {
+      margin: 0;
+
+      font-size: 23px;
+      line-height: 1.25;
+
+      font-weight: 750;
+
+      color: #111827;
+    }
+
+    .card-description {
+      margin: 0;
+
+      font-size: 14px;
+      line-height: 1.6;
+
+      color: #64748b;
+    }
+
+
+    /* =====================================================
+       FORM
+       ===================================================== */
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+
+      margin-bottom: 8px;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      color: #334155;
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    .input-icon {
+      position: absolute;
+
+      left: 14px;
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      color: #94a3b8;
+
+      pointer-events: none;
+    }
+
+    .input-icon .material-symbols-outlined {
+      font-size: 21px;
+    }
+
+    .form-input {
+      width: 100%;
+      height: 48px;
+
+      padding:
+        0 14px 0 44px;
+
+      border:
+        1px solid #cbd5e1;
+
+      border-radius: 8px;
+
+      background: #ffffff;
+
+      color: #0f172a;
+
+      font-size: 14px;
+
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .form-input::placeholder {
+      color: #94a3b8;
+    }
+
+    .form-input:hover {
+      border-color: #94a3b8;
+    }
+
+    .form-input:focus {
+      outline: none;
+
+      border-color: #0f63d8;
+
+      box-shadow:
+        0 0 0 3px
+        rgba(15, 99, 216, 0.12);
+    }
+
+    .password-input {
+      padding-right: 48px;
+    }
+
+    .password-toggle {
+      position: absolute;
+
+      right: 8px;
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      width: 36px;
+      height: 36px;
+
+      border: none;
+
+      background: transparent;
+
+      color: #94a3b8;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 6px;
+    }
+
+    .password-toggle:hover {
+      background: #f1f5f9;
+      color: #475569;
+    }
+
+    .password-toggle .material-symbols-outlined {
+      font-size: 20px;
+    }
+
+    .field-help {
+      margin: 7px 0 0;
+
+      font-size: 12px;
+
+      color: #64748b;
+    }
+
+
+    /* =====================================================
+       SUBMIT BUTTON
+       ===================================================== */
+
+    .submit-button {
+      width: 100%;
+      height: 48px;
+
+      margin-top: 4px;
+
+      border: none;
+
+      border-radius: 8px;
+
+      background: #0f63d8;
+      color: #ffffff;
+
+      font-size: 15px;
+      font-weight: 700;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      box-shadow:
+        0 5px 12px
+        rgba(15, 99, 216, 0.18);
+
+      transition:
+        background 0.2s ease,
+        transform 0.1s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .submit-button:hover {
+      background: #0957c5;
+
+      box-shadow:
+        0 7px 16px
+        rgba(15, 99, 216, 0.23);
+    }
+
+    .submit-button:active {
+      transform: translateY(1px);
+    }
+
+    .submit-button:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .submit-button .material-symbols-outlined {
+      font-size: 21px;
+    }
+
+
+    /* =====================================================
+       LOGIN LINK
+       ===================================================== */
+
+    .login-section {
+      margin-top: 26px;
+
+      padding-top: 22px;
+
+      border-top:
+        1px solid #e2e8f0;
+
+      text-align: center;
+    }
+
+    .login-text {
+      margin: 0;
+
+      font-size: 14px;
+
+      color: #64748b;
+    }
+
+    .login-link {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 3px;
+
+      margin-top: 7px;
+
+      color: #0f63d8;
+
+      font-size: 14px;
+
+      font-weight: 700;
+    }
+
+    .login-link:hover {
+      color: #0957c5;
+      text-decoration: underline;
+    }
+
+    .login-link .material-symbols-outlined {
+      font-size: 18px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    .footer {
+      margin-top: 22px;
+
+      text-align: center;
+
+      font-size: 12px;
+
+      color: #94a3b8;
+    }
+
+
+    /* =====================================================
+       RESPONSIVE
+       ===================================================== */
+
+    @media (max-width: 520px) {
+
+      .page {
+        padding:
+          28px 16px;
+      }
+
+      .brand-title {
+        font-size: 23px;
+      }
+
+      .card {
+        padding: 24px 20px;
+        border-radius: 14px;
+      }
+
+      .card-title {
+        font-size: 21px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <main class="page">
+
+    <div class="container">
+
+
+      <!-- =================================================
+           BRAND
+           ================================================= -->
+
+      <div class="brand">
+
+        <div class="brand-logo">
+
+          <span class="material-symbols-outlined">
+            bolt
+          </span>
+
+        </div>
+
+        <h1 class="brand-title">
+          SKYTECH ELECTRICALS
+        </h1>
+
+        <p class="brand-subtitle">
+          Industrial Power Solutions
+        </p>
+
+      </div>
+
+
+      <!-- =================================================
+           REGISTRATION CARD
+           ================================================= -->
+
+      <section class="card">
+
+
+        <!-- HEADER -->
+
+        <div class="card-header">
+
+          <div class="card-title-row">
+
+            <div class="card-icon">
+
+              <span class="material-symbols-outlined">
+                person_add
+              </span>
+
+            </div>
+
+            <h2 class="card-title">
+              Create Customer Account
+            </h2>
+
+          </div>
+
+          <p class="card-description">
+            Register your SKYTECH customer portal
+            account to manage your equipment and
+            service requests.
+          </p>
+
+        </div>
+
+
+        <!-- =================================================
+             FORM
+             ================================================= -->
+
+        <form
+          id="customer-registration-form"
+          novalidate
+        >
+
+
+          <!-- FULL NAME -->
+
+          <div class="form-group">
+
+            <label
+              class="form-label"
+              for="name"
+            >
+              Full Name
+            </label>
+
+            <div class="input-wrapper">
+
+              <span class="input-icon">
+                <span class="material-symbols-outlined">
+                  person
+                </span>
+              </span>
+
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Enter your full name"
+                class="form-input"
+              />
+
+            </div>
+
+          </div>
+
+
+          <!-- EMAIL -->
+
+          <div class="form-group">
+
+            <label
+              class="form-label"
+              for="email"
+            >
+              Email Address
+            </label>
+
+            <div class="input-wrapper">
+
+              <span class="input-icon">
+                <span class="material-symbols-outlined">
+                  mail
+                </span>
+              </span>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="Enter your email address"
+                class="form-input"
+              />
+
+            </div>
+
+          </div>
+
+
+          <!-- PASSWORD -->
+
+          <div class="form-group">
+
+            <label
+              class="form-label"
+              for="password"
+            >
+              Password
+            </label>
+
+            <div class="input-wrapper">
+
+              <span class="input-icon">
+                <span class="material-symbols-outlined">
+                  lock
+                </span>
+              </span>
+
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                placeholder="Create a password"
+                class="form-input password-input"
+              />
+
+              <button
+                type="button"
+                class="password-toggle"
+                aria-label="Show password"
+              >
+
+                <span class="material-symbols-outlined">
+                  visibility_off
+                </span>
+
+              </button>
+
+            </div>
+
+            <p class="field-help">
+              Password must contain at least
+              6 characters.
+            </p>
+
+          </div>
+
+
+          <!-- CONFIRM PASSWORD -->
+
+          <div class="form-group">
+
+            <label
+              class="form-label"
+              for="confirm-password"
+            >
+              Confirm Password
+            </label>
+
+            <div class="input-wrapper">
+
+              <span class="input-icon">
+                <span class="material-symbols-outlined">
+                  lock_reset
+                </span>
+              </span>
+
+              <input
+                id="confirm-password"
+                name="confirm_password"
+                type="password"
+                autocomplete="new-password"
+                placeholder="Confirm your password"
+                class="form-input password-input"
+              />
+
+              <button
+                type="button"
+                class="password-toggle"
+                aria-label="Show password"
+              >
+
+                <span class="material-symbols-outlined">
+                  visibility_off
+                </span>
+
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- SUBMIT -->
+
+          <button
+            type="submit"
+            class="submit-button"
+          >
+
+            <span class="material-symbols-outlined">
+              person_add
+            </span>
+
+            Create Customer Account
+
+          </button>
+
+        </form>
+
+
+        <!-- =================================================
+             LOGIN
+             ================================================= -->
+
+        <div class="login-section">
+
+          <p class="login-text">
+            Already have a customer account?
+          </p>
+
+          <a
+            href="/portal/login"
+            class="login-link"
+          >
+
+            Sign in to Portal
+
+            <span class="material-symbols-outlined">
+              arrow_forward
+            </span>
+
+          </a>
+
+        </div>
+
+
+      </section>
+
+
+      <!-- FOOTER -->
+
+      <div class="footer">
+
+        © 2026 SKYTECH ELECTRICALS.
+        All rights reserved.
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- =====================================================
+       PASSWORD VISIBILITY
+       ===================================================== -->
+
+  <script>
+
+    const passwordButtons =
+      document.querySelectorAll(
+        ".password-toggle"
+      );
+
+    passwordButtons.forEach((button) => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          const wrapper =
+            button.closest(
+              ".input-wrapper"
+            );
+
+          const input =
+            wrapper?.querySelector(
+              "input"
+            );
+
+          const icon =
+            button.querySelector(
+              ".material-symbols-outlined"
+            );
+
+          if (!input) {
+            return;
+          }
+
+          const isPassword =
+            input.type === "password";
+
+          input.type =
+            isPassword
+              ? "text"
+              : "password";
+
+          if (icon) {
+
+            icon.textContent =
+              isPassword
+                ? "visibility"
+                : "visibility_off";
+
+          }
+
+        }
+      );
+
+    });
+
+  </script>
+
+
+</body>
+
+</html>

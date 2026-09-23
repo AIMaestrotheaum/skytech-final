@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request a Quote - SKYTECH ELECTRICALS</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#3cd7ff",
+                        "secondary": "#0050cc",
+                        "surface-bright": "#f7f9fb",
+                        "outline": "#75777e",
+                        "tertiary-fixed": "#b4ebff",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "surface-dim": "#d8dadc",
+                        "secondary-container": "#0266ff",
+                        "primary-fixed": "#d6e3ff",
+                        "on-surface-variant": "#44474d",
+                        "background": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-variant": "#e0e3e5",
+                        "outline-variant": "#c5c6cd",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-tertiary-container": "#0090ae",
+                        "primary-container": "#0d1c32",
+                        "on-background": "#191c1e",
+                        "secondary-fixed": "#dae1ff",
+                        "on-primary-fixed-variant": "#39475f",
+                        "on-tertiary-fixed": "#001f27",
+                        "on-tertiary-fixed-variant": "#004e5f",
+                        "on-secondary-fixed": "#001849",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "on-secondary-container": "#f9f7ff",
+                        "tertiary-container": "#001f27",
+                        "on-primary-container": "#76849f",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#b9c7e4",
+                        "tertiary": "#000000",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#515f78",
+                        "on-primary": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "primary": "#000000",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#003fa4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "gutter": "24px",
+                        "sm": "16px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "xl": "80px",
+                        "lg": "40px",
+                        "base": "4px",
+                        "xs": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-h1-mobile": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "label-caps": ["JetBrains Mono"],
+                        "data-mono": ["JetBrains Mono"],
+                        "headline-h2": ["Manrope"],
+                        "headline-h1": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-h1-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "data-mono": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "headline-h2": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-h1": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .grid-bg {
+            background-image: radial-gradient(#c5c6cd 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .step-inactive { display: none; }
+        .step-active { display: block; animation: fadeIn 0.3s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest docked full-width top-0 sticky border-b border-outline-variant shadow-sm flex justify-between items-center w-full px-margin-desktop py-base max-w-7xl mx-auto z-50">
+<div class="flex items-center gap-sm">
+<span class="font-headline-h2 text-headline-h2 font-bold text-primary">SKYTECH ELECTRICALS</span>
+</div>
+<nav class="hidden md:flex items-center gap-md">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors hover:text-secondary transition-all duration-200 active:scale-95" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors hover:text-secondary transition-all duration-200 active:scale-95" href="#">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors hover:text-secondary transition-all duration-200 active:scale-95" href="#">Products</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors hover:text-secondary transition-all duration-200 active:scale-95" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors hover:text-secondary transition-all duration-200 active:scale-95" href="#">Industries</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors hover:text-secondary transition-all duration-200 active:scale-95" href="#">Projects</a>
+</nav>
+<div class="flex items-center gap-sm">
+<button class="hidden md:flex items-center gap-xs font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all duration-200 active:scale-95">
+                Blog
+            </button>
+<button class="bg-primary-container text-on-primary font-body-md text-body-md font-semibold py-2 px-4 rounded-lg transition-all duration-200 hover:bg-on-primary-fixed-variant active:scale-95 hidden md:block">
+                Get a Quote
+            </button>
+<button class="text-on-surface-variant hover:text-secondary transition-all duration-200 active:scale-95 p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">contact_support</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow relative overflow-hidden py-xl grid-bg">
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-0 relative z-10">
+<div class="text-center mb-lg">
+<h1 class="font-headline-h1 text-headline-h1 text-primary mb-sm">Request a Formal Quote</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Provide your technical requirements below, and our engineering team will configure a precise power solution for your facility.</p>
+</div>
+<!-- Form Container -->
+<div class="bg-surface-container-lowest border border-outline-variant shadow-sm rounded-xl p-md md:p-lg">
+<!-- Stepper -->
+<div class="flex items-center justify-between mb-lg relative">
+<div class="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-[2px] bg-surface-variant -z-10"></div>
+<!-- Step 1 Indicator -->
+<div class="flex flex-col items-center gap-xs relative z-10" id="indicator-1">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-data-mono text-data-mono font-bold shadow-sm transition-colors duration-300">1</div>
+<span class="font-label-caps text-label-caps text-primary hidden md:block">Customer Info</span>
+</div>
+<!-- Step 2 Indicator -->
+<div class="flex flex-col items-center gap-xs relative z-10" id="indicator-2">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-data-mono text-data-mono font-bold transition-colors duration-300">2</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant hidden md:block">Requirements</span>
+</div>
+<!-- Step 3 Indicator -->
+<div class="flex flex-col items-center gap-xs relative z-10" id="indicator-3">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-data-mono text-data-mono font-bold transition-colors duration-300">3</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant hidden md:block">Tech Specs</span>
+</div>
+<!-- Step 4 Indicator -->
+<div class="flex flex-col items-center gap-xs relative z-10" id="indicator-4">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-data-mono text-data-mono font-bold transition-colors duration-300">4</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant hidden md:block">Review</span>
+</div>
+</div>
+<form class="space-y-md" id="quote-form">
+<!-- Step 1: Customer Info -->
+<div class="step-active" id="step-1">
+<h2 class="font-headline-h2 text-headline-h2 text-primary border-b border-outline-variant pb-xs mb-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary">person</span>
+                            Contact Information
+                        </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-base">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Full Name *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-sm py-xs font-body-md text-primary focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-base">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Company Name *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-sm py-xs font-body-md text-primary focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="Acme Corp" type="text"/>
+</div>
+<div class="flex flex-col gap-base">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Work Email *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-sm py-xs font-body-md text-primary focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="john@acmecorp.com" type="email"/>
+</div>
+<div class="flex flex-col gap-base">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Phone Number</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-sm py-xs font-data-mono text-data-mono text-primary focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div class="flex flex-col gap-base md:col-span-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Facility Location *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-sm py-xs font-body-md text-primary focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="City, State / Region" type="text"/>
+</div>
+</div>
+</div>
+<!-- Step 2: Requirement Selection -->
+<div class="step-inactive" id="step-2">
+<h2 class="font-headline-h2 text-headline-h2 text-primary border-b border-outline-variant pb-xs mb-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary">inventory_2</span>
+                            Core Requirements
+                        </h2>
+<p class="font-body-md text-on-surface-variant mb-sm">Select the systems or services you are inquiring about (Select all that apply).</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-sm">
+<label class="cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="bg-surface border border-outline-variant rounded-lg p-sm flex items-start gap-sm hover:border-secondary transition-colors peer-checked:border-secondary peer-checked:bg-primary-fixed peer-checked:shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant peer-checked:text-secondary mt-1">battery_charging_full</span>
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-primary">Industrial UPS Systems</h3>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">Uninterruptible power supply units for critical load protection.</p>
+</div>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="bg-surface border border-outline-variant rounded-lg p-sm flex items-start gap-sm hover:border-secondary transition-colors peer-checked:border-secondary peer-checked:bg-primary-fixed peer-checked:shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant peer-checked:text-secondary mt-1">downloading</span>
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-primary">Battery Banks</h3>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">SMF/Tubular battery arrays for extended backup capacity.</p>
+</div>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="bg-surface border border-outline-variant rounded-lg p-sm flex items-start gap-sm hover:border-secondary transition-colors peer-checked:border-secondary peer-checked:bg-primary-fixed peer-checked:shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant peer-checked:text-secondary mt-1">bolt</span>
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-primary">Servo Stabilizers</h3>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">Voltage regulation for sensitive manufacturing equipment.</p>
+</div>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="bg-surface border border-outline-variant rounded-lg p-sm flex items-start gap-sm hover:border-secondary transition-colors peer-checked:border-secondary peer-checked:bg-primary-fixed peer-checked:shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant peer-checked:text-secondary mt-1">verified</span>
+<div>
+<h3 class="font-body-md text-body-md font-semibold text-primary">Annual Maintenance (AMC)</h3>
+<p class="font-body-md text-sm text-on-surface-variant mt-1">Comprehensive service contracts for existing infrastructure.</p>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Step 3: Technical Specs -->
+<div class="step-inactive" id="step-3">
+<h2 class="font-headline-h2 text-headline-h2 text-primary border-b border-outline-variant pb-xs mb-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary">precision_manufacturing</span>
+                            Technical Specifications
+                        </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-base md:col-span-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Industry / Application Type</label>
+<select class="bg-surface border border-outline-variant rounded-lg px-sm py-xs font-body-md text-primary focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all">
+<option disabled="" selected="" value="">Select Industry</option>
+<option value="manufacturing">Heavy Manufacturing</option>
+<option value="healthcare">Healthcare &amp; Hospitals</option>
+<option value="datacenter">Data Centers &amp; IT</option>
+<option value="commercial">Commercial Real Estate</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="flex flex-col gap-base">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Estimated Load Requirement (kVA)</label>
+<div class="relative">
+<input class="w-full bg-surface border border-outline-variant rounded-lg pl-sm pr-12 py-xs font-data-mono text-data-mono text-primary focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="e.g. 500" type="number"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-caps text-on-surface-variant">kVA</span>
+</div>
+</div>
+<div class="flex flex-col gap-base">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Desired Backup Time (Hours)</label>
+<div class="relative">
+<input class="w-full bg-surface border border-outline-variant rounded-lg pl-sm pr-12 py-xs font-data-mono text-data-mono text-primary focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all" placeholder="e.g. 4" type="number"/>
+<span class="absolute right-3 top-1/2 -translate-y-1/2 font-label-caps text-on-surface-variant">HRS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 4: Additional Details & File Upload -->
+<div class="step-inactive" id="step-4">
+<h2 class="font-headline-h2 text-headline-h2 text-primary border-b border-outline-variant pb-xs mb-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary">description</span>
+                            Additional Details
+                        </h2>
+<div class="flex flex-col gap-md">
+<div class="flex flex-col gap-base">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Specific Requirements or Constraints</label>
+<textarea class="bg-surface border border-outline-variant rounded-lg p-sm font-body-md text-primary focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all resize-none" placeholder="Describe any spatial constraints, environmental conditions, or specific brand preferences..." rows="4"></textarea>
+</div>
+<div class="flex flex-col gap-base">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Upload SLD (Single Line Diagram) or BOQ</label>
+<div class="border-2 border-dashed border-outline-variant rounded-lg p-lg text-center bg-surface hover:bg-surface-container transition-colors cursor-pointer flex flex-col items-center justify-center gap-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl">upload_file</span>
+<span class="font-body-md font-semibold text-primary">Click to upload or drag and drop</span>
+<span class="font-body-md text-sm text-on-surface-variant">PDF, DWG, DOCX up to 10MB</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Controls -->
+<div class="pt-md mt-md border-t border-outline-variant flex justify-between items-center">
+<button class="hidden font-body-md text-body-md font-semibold px-4 py-2 border border-outline-variant rounded-lg text-on-surface-variant hover:bg-surface-variant hover:text-primary transition-colors duration-200" id="btn-prev" type="button">
+                            Back
+                        </button>
+<div class="flex-grow"></div> <!-- Spacer -->
+<button class="bg-primary-container text-on-primary font-body-md text-body-md font-bold px-6 py-2 rounded-lg hover:bg-on-primary-fixed-variant transition-colors duration-200 shadow-sm flex items-center gap-xs" id="btn-next" type="button">
+                            Next Step <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="hidden bg-secondary text-on-secondary font-body-md text-body-md font-bold px-6 py-2 rounded-lg hover:bg-secondary-container hover:text-on-primary-container transition-colors duration-200 shadow-sm flex items-center gap-xs" id="btn-submit" type="submit">
+                            Submit Quote Request <span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container w-full py-lg grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-7xl mx-auto border-t border-secondary">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-sm">
+<span class="font-headline-h1 text-headline-h1 text-white">SKYTECH</span>
+<span class="font-body-md text-on-primary-container mt-auto">© 2024 SKYTECH ELECTRICALS. All rights reserved.</span>
+</div>
+<div class="col-span-1 md:col-span-3 flex justify-start md:justify-end items-end">
+<nav class="flex flex-wrap gap-md font-body-md text-body-md text-on-primary-container">
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Terms of Service</a>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">GSTIN Details</a>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">PAN Info</a>
+</nav>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentStep = 1;
+            const totalSteps = 4;
+
+            const btnNext = document.getElementById('btn-next');
+            const btnPrev = document.getElementById('btn-prev');
+            const btnSubmit = document.getElementById('btn-submit');
+
+            function updateUI() {
+                // Update Steps visibility
+                for (let i = 1; i <= totalSteps; i++) {
+                    const stepEl = document.getElementById(`step-${i}`);
+                    if (i === currentStep) {
+                        stepEl.classList.remove('step-inactive');
+                        stepEl.classList.add('step-active');
+                    } else {
+                        stepEl.classList.remove('step-active');
+                        stepEl.classList.add('step-inactive');
+                    }
+                }
+
+                // Update Indicators
+                for (let i = 1; i <= totalSteps; i++) {
+                    const indicatorGroup = document.getElementById(`indicator-${i}`);
+                    const circle = indicatorGroup.querySelector('div');
+                    const text = indicatorGroup.querySelector('span');
+
+                    if (i === currentStep) {
+                        circle.className = "w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-data-mono text-data-mono font-bold shadow-sm transition-colors duration-300";
+                        text.className = "font-label-caps text-label-caps text-primary hidden md:block font-bold";
+                    } else if (i < currentStep) {
+                        circle.className = "w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-data-mono text-data-mono font-bold transition-colors duration-300";
+                        text.className = "font-label-caps text-label-caps text-primary hidden md:block";
+                    } else {
+                        circle.className = "w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-data-mono text-data-mono font-bold transition-colors duration-300";
+                        text.className = "font-label-caps text-label-caps text-on-surface-variant hidden md:block";
+                    }
+                }
+
+                // Update Buttons
+                if (currentStep === 1) {
+                    btnPrev.classList.add('hidden');
+                } else {
+                    btnPrev.classList.remove('hidden');
+                }
+
+                if (currentStep === totalSteps) {
+                    btnNext.classList.add('hidden');
+                    btnSubmit.classList.remove('hidden');
+                } else {
+                    btnNext.classList.remove('hidden');
+                    btnSubmit.classList.add('hidden');
+                }
+            }
+
+            btnNext.addEventListener('click', () => {
+                if (currentStep < totalSteps) {
+                    currentStep++;
+                    updateUI();
+                }
+            });
+
+            btnPrev.addEventListener('click', () => {
+                if (currentStep > 1) {
+                    currentStep--;
+                    updateUI();
+                }
+            });
+
+            document.getElementById('quote-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Handle form submission logic here
+                alert('Quote request submitted successfully!');
+            });
+        });
+    </script>
+</body></html>

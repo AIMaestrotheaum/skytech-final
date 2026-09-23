@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Service Request &amp; AMC Enquiry | SKYTECH ELECTRICALS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-tint": "#515f78",
+                        "tertiary-fixed-dim": "#3cd7ff",
+                        "tertiary-fixed": "#b4ebff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#001f27",
+                        "primary": "#000000",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "surface": "#f7f9fb",
+                        "secondary-fixed": "#dae1ff",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-surface-variant": "#44474d",
+                        "primary-fixed": "#d6e3ff",
+                        "on-secondary-fixed": "#001849",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "secondary-container": "#0266ff",
+                        "on-secondary-fixed-variant": "#003fa4",
+                        "outline-variant": "#c5c6cd",
+                        "primary-container": "#0d1c32",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#f9f7ff",
+                        "on-tertiary-fixed": "#001f27",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#004e5f",
+                        "surface-container": "#eceef0",
+                        "inverse-surface": "#2d3133",
+                        "surface-container-low": "#f2f4f6",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-background": "#191c1e",
+                        "on-primary-container": "#76849f",
+                        "background": "#f7f9fb",
+                        "on-tertiary-container": "#0090ae",
+                        "surface-container-highest": "#e0e3e5",
+                        "tertiary": "#000000",
+                        "on-primary-fixed-variant": "#39475f",
+                        "surface-bright": "#f7f9fb",
+                        "secondary": "#0050cc",
+                        "inverse-primary": "#b9c7e4",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#191c1e",
+                        "outline": "#75777e",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "on-primary-fixed": "#0d1c32"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "xs": "8px",
+                        "base": "4px",
+                        "xl": "80px",
+                        "lg": "40px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "sm": "16px",
+                        "md": "24px",
+                        "gutter": "24px"
+                    },
+                    fontFamily: {
+                        "headline-h1-mobile": ["Manrope"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-h1": ["Manrope"],
+                        "headline-h2": ["Manrope"],
+                        "data-mono": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Manrope"]
+                    },
+                    fontSize: {
+                        "headline-h1-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-h1": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-h2": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "data-mono": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .grid-bg {
+            background-image: radial-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .form-step { display: none; }
+        .form-step.active { display: block; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col relative grid-bg">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-surface-container-highest docked full-width top-0 sticky border-b border-outline-variant dark:border-outline shadow-sm z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop py-base max-w-7xl mx-auto z-50">
+<div class="font-headline-h2 text-headline-h2 font-bold text-primary dark:text-on-primary-fixed">SKYTECH ELECTRICALS</div>
+<nav class="hidden md:flex gap-gutter font-body-md text-body-md">
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors transition-all duration-200 active:scale-95 hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors transition-all duration-200 active:scale-95 hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors transition-all duration-200 active:scale-95 hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="#">Products</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors transition-all duration-200 active:scale-95 hover:text-secondary dark:hover:text-secondary-fixed transition-all text-secondary dark:text-secondary-fixed-dim font-semibold border-b-2 border-secondary" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors transition-all duration-200 active:scale-95 hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="#">Industries</a>
+<a class="text-on-surface-variant dark:text-on-surface hover:text-secondary transition-colors transition-all duration-200 active:scale-95 hover:text-secondary dark:hover:text-secondary-fixed transition-all" href="#">Projects</a>
+</nav>
+<div class="flex items-center gap-sm">
+<button class="font-body-md text-body-md bg-transparent border border-secondary text-secondary px-sm py-xs rounded hover:bg-secondary hover:text-on-secondary transition-colors">Blog</button>
+<button class="font-body-md text-body-md bg-primary text-on-primary px-sm py-xs rounded hover:bg-primary-container transition-colors">Get a Quote</button>
+<button class="text-on-surface-variant hover:text-secondary transition-colors"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">contact_support</span></button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl relative z-10">
+<div class="mb-lg text-center">
+<h1 class="font-headline-h1 text-headline-h1 text-primary mb-xs">Service &amp; AMC Request</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Initiate technical support or request an Annual Maintenance Contract proposal for your high-voltage equipment.</p>
+</div>
+<!-- Bento Grid Form Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-md items-start">
+<!-- Context Side Panel -->
+<div class="lg:col-span-4 bg-surface-container-lowest border border-outline-variant p-md rounded-lg shadow-sm">
+<div class="mb-md">
+<span class="material-symbols-outlined text-secondary text-4xl mb-xs" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+<h3 class="font-headline-h2 text-headline-h2 text-primary">Industrial Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Our certified engineers provide rapid response and comprehensive maintenance for critical electrical infrastructure.</p>
+</div>
+<div class="border-t border-outline-variant pt-md mb-md">
+<h4 class="font-label-caps text-label-caps text-on-surface-variant mb-sm">Service Tiers</h4>
+<ul class="space-y-sm">
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-tertiary-container text-sm mt-1">check_circle</span>
+<div>
+<span class="font-body-md text-body-md font-semibold text-primary block">Emergency Repair</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">24/7 SLA</span>
+</div>
+</li>
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-tertiary-container text-sm mt-1">check_circle</span>
+<div>
+<span class="font-body-md text-body-md font-semibold text-primary block">Standard Maintenance</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">Scheduled downtime</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-sm rounded border border-outline-variant">
+<p class="font-data-mono text-data-mono text-primary font-bold">24/7 Hotline: +1 (800) SKY-TECH</p>
+</div>
+</div>
+<!-- Form Container -->
+<div class="lg:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-lg shadow-sm p-lg relative overflow-hidden">
+<!-- Decorative Top Border -->
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<!-- Progress Tracker -->
+<div class="flex items-center justify-between mb-lg relative">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-px bg-outline-variant -z-10"></div>
+<div class="flex flex-col items-center gap-xs bg-surface-container-lowest px-2">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-data-mono text-sm font-bold shadow-sm" id="step1-indicator">1</div>
+<span class="font-label-caps text-label-caps text-primary">Company Info</span>
+</div>
+<div class="flex flex-col items-center gap-xs bg-surface-container-lowest px-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant border border-outline-variant flex items-center justify-center font-data-mono text-sm font-bold" id="step2-indicator">2</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Equipment</span>
+</div>
+<div class="flex flex-col items-center gap-xs bg-surface-container-lowest px-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant border border-outline-variant flex items-center justify-center font-data-mono text-sm font-bold" id="step3-indicator">3</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Details</span>
+</div>
+</div>
+<form id="service-form" onsubmit="event.preventDefault(); showSuccess();">
+<!-- Step 1: Company Info -->
+<div class="form-step active space-y-md" id="step1">
+<h2 class="font-headline-h2 text-headline-h2 text-primary border-b border-outline-variant pb-xs mb-sm">Company Information</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Company Name *</label>
+<input class="w-full bg-surface border border-outline-variant rounded p-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-colors font-body-md text-body-md" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Contact Person *</label>
+<input class="w-full bg-surface border border-outline-variant rounded p-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-colors font-body-md text-body-md" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Email Address *</label>
+<input class="w-full bg-surface border border-outline-variant rounded p-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-colors font-body-md text-body-md" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Phone Number *</label>
+<input class="w-full bg-surface border border-outline-variant rounded p-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-colors font-data-mono text-data-mono" required="" type="tel"/>
+</div>
+</div>
+<div class="flex justify-end pt-sm">
+<button class="bg-secondary text-on-secondary px-md py-sm rounded font-body-md text-body-md font-semibold hover:bg-secondary-container transition-colors flex items-center gap-xs" onclick="nextStep(2)" type="button">
+                                Next <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Step 2: Equipment Details -->
+<div class="form-step space-y-md" id="step2">
+<h2 class="font-headline-h2 text-headline-h2 text-primary border-b border-outline-variant pb-xs mb-sm">Equipment Details</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Equipment Category *</label>
+<select class="w-full bg-surface border border-outline-variant rounded p-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-colors font-body-md text-body-md appearance-none" required="">
+<option value="">Select Category...</option>
+<option value="transformer">Power Transformer</option>
+<option value="switchgear">Switchgear Assembly</option>
+<option value="generator">Diesel Generator</option>
+<option value="ups">Industrial UPS</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Manufacturer / Brand</label>
+<input class="w-full bg-surface border border-outline-variant rounded p-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-colors font-body-md text-body-md" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Model Number</label>
+<input class="w-full bg-surface border border-outline-variant rounded p-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-colors font-data-mono text-data-mono uppercase" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Year of Installation</label>
+<input class="w-full bg-surface border border-outline-variant rounded p-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-colors font-data-mono text-data-mono" max="2025" min="1980" type="number"/>
+</div>
+</div>
+<div class="flex justify-between pt-sm">
+<button class="border border-outline-variant text-on-surface-variant px-md py-sm rounded font-body-md text-body-md hover:bg-surface-container-high transition-colors" onclick="prevStep(1)" type="button">Back</button>
+<button class="bg-secondary text-on-secondary px-md py-sm rounded font-body-md text-body-md font-semibold hover:bg-secondary-container transition-colors flex items-center gap-xs" onclick="nextStep(3)" type="button">
+                                Next <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Step 3: Request Details -->
+<div class="form-step space-y-md" id="step3">
+<h2 class="font-headline-h2 text-headline-h2 text-primary border-b border-outline-variant pb-xs mb-sm">Request Details</h2>
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Request Type *</label>
+<div class="flex gap-sm">
+<label class="flex-1 border border-outline-variant rounded p-sm cursor-pointer hover:border-secondary transition-colors relative">
+<input checked="" class="sr-only peer" name="req_type" required="" type="radio" value="repair"/>
+<div class="absolute inset-0 rounded border-2 border-transparent peer-checked:border-secondary pointer-events-none"></div>
+<span class="font-body-md text-body-md font-semibold block text-primary">Corrective Maintenance</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm block">Report a fault/issue</span>
+</label>
+<label class="flex-1 border border-outline-variant rounded p-sm cursor-pointer hover:border-secondary transition-colors relative">
+<input class="sr-only peer" name="req_type" type="radio" value="amc"/>
+<div class="absolute inset-0 rounded border-2 border-transparent peer-checked:border-secondary pointer-events-none"></div>
+<span class="font-body-md text-body-md font-semibold block text-primary">AMC Proposal</span>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm block">Annual contract inquiry</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-primary mb-xs">Problem Description / Requirements *</label>
+<textarea class="w-full bg-surface border border-outline-variant rounded p-sm focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-colors font-body-md text-body-md resize-none" required="" rows="4"></textarea>
+</div>
+<div>
+<label class="flex items-center gap-xs cursor-pointer">
+<input class="rounded border-outline-variant text-secondary focus:ring-secondary" required="" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm">I verify that the above information is accurate and authorize SKYTECH to process this request.</span>
+</label>
+</div>
+<div class="flex justify-between pt-sm">
+<button class="border border-outline-variant text-on-surface-variant px-md py-sm rounded font-body-md text-body-md hover:bg-surface-container-high transition-colors" onclick="prevStep(2)" type="button">Back</button>
+<button class="bg-primary-container text-on-primary px-md py-sm rounded font-body-md text-body-md font-bold hover:bg-primary transition-colors flex items-center gap-xs uppercase tracking-wide" type="submit">
+                                Submit Request
+                            </button>
+</div>
+</div>
+<!-- Success Screen -->
+<div class="form-step py-xl text-center" id="success-screen">
+<div class="w-16 h-16 mx-auto bg-surface-container-low rounded-full flex items-center justify-center border-2 border-outline-variant mb-md relative">
+<span class="material-symbols-outlined text-3xl text-primary">verified</span>
+<div class="absolute top-0 right-0 w-3 h-3 bg-secondary rounded-full border-2 border-surface-container-lowest"></div>
+</div>
+<h2 class="font-headline-h1 text-headline-h1 text-primary mb-xs">Request Submitted</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-md">Your service request has been logged in our system.</p>
+<div class="inline-block bg-surface-container-low border border-outline-variant rounded p-sm mb-lg">
+<span class="font-label-caps text-label-caps text-on-surface-variant block mb-1">Ticket Number</span>
+<span class="font-data-mono text-data-mono text-primary font-bold text-xl tracking-wider">SRQ-8492-AX</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md max-w-md mx-auto">Our dispatch team will review the details and contact the designated representative within 4 hours.</p>
+<button class="border border-secondary text-secondary px-md py-sm rounded font-body-md text-body-md hover:bg-surface-container-high transition-colors" onclick="location.reload()" type="button">Submit Another Request</button>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-surface-container-lowest text-on-primary-container dark:text-on-surface font-body-md text-body-md w-full py-lg border-t border-secondary mt-auto z-10 relative">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-7xl mx-auto">
+<div>
+<div class="font-headline-h1 text-headline-h1 text-white mb-sm">SKYTECH ELECTRICALS</div>
+<p class="text-sm opacity-80 mb-4">Precision Engineering &amp; Industrial Power Solutions.</p>
+<p class="text-xs opacity-60">© 2024 SKYTECH ELECTRICALS. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-bold text-white mb-2">Legal</h4>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-bold text-white mb-2">Compliance</h4>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">GSTIN Details</a>
+<a class="opacity-70 hover:opacity-100 hover:text-tertiary-fixed-dim transition-colors" href="#">PAN Info</a>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-bold text-white mb-2">Contact</h4>
+<p class="opacity-70 font-data-mono text-sm">support@skytech.com</p>
+<p class="opacity-70 font-data-mono text-sm">+1 (800) SKY-TECH</p>
+</div>
+</div>
+</footer>
+<script>
+        function updateIndicators(step) {
+            for(let i=1; i<=3; i++) {
+                const el = document.getElementById(`step${i}-indicator`);
+                const label = el.nextElementSibling;
+                if(i < step) {
+                    el.className = 'w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant border border-outline-variant flex items-center justify-center font-data-mono text-sm font-bold opacity-50';
+                    el.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>';
+                    label.className = 'font-label-caps text-label-caps text-on-surface-variant opacity-50';
+                } else if(i === step) {
+                    el.className = 'w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-data-mono text-sm font-bold shadow-sm';
+                    el.innerHTML = i;
+                    label.className = 'font-label-caps text-label-caps text-primary font-bold';
+                } else {
+                    el.className = 'w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant border border-outline-variant flex items-center justify-center font-data-mono text-sm font-bold';
+                    el.innerHTML = i;
+                    label.className = 'font-label-caps text-label-caps text-on-surface-variant';
+                }
+            }
+        }
+
+        function nextStep(step) {
+            // Basic validation check before proceeding
+            const currentStepEl = document.querySelector('.form-step.active');
+            const inputs = currentStepEl.querySelectorAll('input[required], select[required], textarea[required]');
+            let valid = true;
+            inputs.forEach(input => {
+                if(!input.value) {
+                    valid = false;
+                    input.classList.add('border-error');
+                } else {
+                    input.classList.remove('border-error');
+                }
+            });
+
+            if(!valid) return;
+
+            document.querySelectorAll('.form-step').forEach(el => el.classList.remove('active'));
+            document.getElementById('step' + step).classList.add('active');
+            updateIndicators(step);
+        }
+
+        function prevStep(step) {
+            document.querySelectorAll('.form-step').forEach(el => el.classList.remove('active'));
+            document.getElementById('step' + step).classList.add('active');
+            updateIndicators(step);
+        }
+
+        function showSuccess() {
+            document.querySelectorAll('.form-step').forEach(el => el.classList.remove('active'));
+            document.getElementById('success-screen').classList.add('active');
+            document.querySelector('.flex.items-center.justify-between.mb-lg.relative').style.display = 'none'; // hide tracker
+        }
+        
+        // Remove error styling on input
+        document.querySelectorAll('input, select, textarea').forEach(el => {
+            el.addEventListener('input', function() {
+                this.classList.remove('border-error');
+            });
+        });
+    </script>
+</body></html>
